@@ -1,0 +1,18 @@
+# ── Secrets — NEVER commit these ──────────────────────────────────────────────
+# Friends: copy this file, fill in your own Azure keys, and keep it local.
+AIPathwayLab.Api/appsettings.Development.json
+
+# ── .NET build output ─────────────────────────────────────────────────────────
+**/bin/
+**/obj/
+
+# ── Next.js ───────────────────────────────────────────────────────────────────
+ai-tutor-ui/.next/
+ai-tutor-ui/node_modules/
+ai-tutor-ui/.env.local
+
+# ── OS / editor noise ─────────────────────────────────────────────────────────
+.DS_Store
+.idea/
+.vscode/
+*.user

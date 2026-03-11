@@ -1,0 +1,2804 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "domain": "Plan and Manage Azure AI",
+      "difficulty": "hard",
+      "question": "Which Azure AI Vision feature extracts printed and handwritten text from images?",
+      "options": {
+        "A": "Face Detection",
+        "B": "Object Detection",
+        "C": "Read API (OCR)",
+        "D": "Image Tagging"
+      },
+      "correctAnswer": "C",
+      "explanation": "The Read API performs OCR to extract text from images and documents."
+    },
+    {
+      "id": 2,
+      "domain": "Knowledge Mining",
+      "difficulty": "hard",
+      "question": "Which Azure Speech feature converts spoken audio into text?",
+      "options": {
+        "A": "Text-to-Speech",
+        "B": "Speech-to-Text",
+        "C": "Speech Translation",
+        "D": "Speaker Recognition"
+      },
+      "correctAnswer": "B",
+      "explanation": "Speech-to-Text converts spoken audio into written text."
+    },
+    {
+      "id": 3,
+      "domain": "Natural Language Processing",
+      "difficulty": "medium",
+      "question": "Which technique retrieves relevant documents and provides them as context to an LLM?",
+      "options": {
+        "A": "Fine-tuning",
+        "B": "Retrieval Augmented Generation",
+        "C": "Batch inference",
+        "D": "Transfer learning"
+      },
+      "correctAnswer": "B",
+      "explanation": "Retrieval Augmented Generation (RAG) retrieves external knowledge and injects it into prompts."
+    },
+    {
+      "id": 4,
+      "domain": "Document Intelligence",
+      "difficulty": "hard",
+      "question": "Which Azure service provides prebuilt AI APIs for vision, speech, and language tasks?",
+      "options": {
+        "A": "Azure Cognitive Services",
+        "B": "Azure DevOps",
+        "C": "Azure Kubernetes Service",
+        "D": "Azure Virtual Machines"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Cognitive Services (Azure AI Services) provide prebuilt APIs for vision, speech, language, and decision tasks."
+    },
+    {
+      "id": 5,
+      "domain": "Plan and Manage Azure AI",
+      "difficulty": "medium",
+      "question": "Which technique retrieves relevant documents and provides them as context to an LLM?",
+      "options": {
+        "A": "Fine-tuning",
+        "B": "Retrieval Augmented Generation",
+        "C": "Batch inference",
+        "D": "Transfer learning"
+      },
+      "correctAnswer": "B",
+      "explanation": "Retrieval Augmented Generation (RAG) retrieves external knowledge and injects it into prompts."
+    },
+    {
+      "id": 6,
+      "domain": "Plan and Manage Azure AI",
+      "difficulty": "hard",
+      "question": "Which Azure AI Language feature identifies positive, negative, or neutral sentiment in text?",
+      "options": {
+        "A": "Sentiment Analysis",
+        "B": "Named Entity Recognition",
+        "C": "Language Detection",
+        "D": "Key Phrase Extraction"
+      },
+      "correctAnswer": "A",
+      "explanation": "Sentiment Analysis determines whether text sentiment is positive, neutral, or negative."
+    },
+    {
+      "id": 7,
+      "domain": "Speech",
+      "difficulty": "hard",
+      "question": "Which Azure AI Vision feature extracts printed and handwritten text from images?",
+      "options": {
+        "A": "Face Detection",
+        "B": "Object Detection",
+        "C": "Read API (OCR)",
+        "D": "Image Tagging"
+      },
+      "correctAnswer": "C",
+      "explanation": "The Read API performs OCR to extract text from images and documents."
+    },
+    {
+      "id": 8,
+      "domain": "Natural Language Processing",
+      "difficulty": "medium",
+      "question": "Which Azure feature allows secure authentication to Azure services without storing credentials in code?",
+      "options": {
+        "A": "API Keys",
+        "B": "Managed Identity",
+        "C": "Shared Access Signature",
+        "D": "Storage Keys"
+      },
+      "correctAnswer": "B",
+      "explanation": "Managed Identity allows Azure resources to authenticate without storing credentials in code."
+    },
+    {
+      "id": 9,
+      "domain": "Generative AI",
+      "difficulty": "hard",
+      "question": "Which Azure service extracts structured information from documents such as invoices and receipts?",
+      "options": {
+        "A": "Azure Document Intelligence",
+        "B": "Azure AI Vision",
+        "C": "Azure Translator",
+        "D": "Azure Bot Service"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Document Intelligence extracts structured fields, tables, and key-value pairs from documents."
+    },
+    {
+      "id": 10,
+      "domain": "Speech",
+      "difficulty": "medium",
+      "question": "Which Azure service extracts structured information from documents such as invoices and receipts?",
+      "options": {
+        "A": "Azure Document Intelligence",
+        "B": "Azure AI Vision",
+        "C": "Azure Translator",
+        "D": "Azure Bot Service"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Document Intelligence extracts structured fields, tables, and key-value pairs from documents."
+    },
+    {
+      "id": 11,
+      "domain": "Plan and Manage Azure AI",
+      "difficulty": "hard",
+      "question": "Which Azure feature allows secure authentication to Azure services without storing credentials in code?",
+      "options": {
+        "A": "API Keys",
+        "B": "Managed Identity",
+        "C": "Shared Access Signature",
+        "D": "Storage Keys"
+      },
+      "correctAnswer": "B",
+      "explanation": "Managed Identity allows Azure resources to authenticate without storing credentials in code."
+    },
+    {
+      "id": 12,
+      "domain": "Document Intelligence",
+      "difficulty": "hard",
+      "question": "What does the temperature parameter control in Azure OpenAI models?",
+      "options": {
+        "A": "Maximum response length",
+        "B": "Response randomness",
+        "C": "Model latency",
+        "D": "Language selection"
+      },
+      "correctAnswer": "B",
+      "explanation": "Temperature controls randomness. Lower values make outputs deterministic while higher values increase creativity."
+    },
+    {
+      "id": 13,
+      "domain": "Knowledge Mining",
+      "difficulty": "hard",
+      "question": "Which Azure Speech feature converts spoken audio into text?",
+      "options": {
+        "A": "Text-to-Speech",
+        "B": "Speech-to-Text",
+        "C": "Speech Translation",
+        "D": "Speaker Recognition"
+      },
+      "correctAnswer": "B",
+      "explanation": "Speech-to-Text converts spoken audio into written text."
+    },
+    {
+      "id": 14,
+      "domain": "Knowledge Mining",
+      "difficulty": "medium",
+      "question": "Which Azure feature allows secure authentication to Azure services without storing credentials in code?",
+      "options": {
+        "A": "API Keys",
+        "B": "Managed Identity",
+        "C": "Shared Access Signature",
+        "D": "Storage Keys"
+      },
+      "correctAnswer": "B",
+      "explanation": "Managed Identity allows Azure resources to authenticate without storing credentials in code."
+    },
+    {
+      "id": 15,
+      "domain": "Generative AI",
+      "difficulty": "easy",
+      "question": "Which Azure Speech feature converts spoken audio into text?",
+      "options": {
+        "A": "Text-to-Speech",
+        "B": "Speech-to-Text",
+        "C": "Speech Translation",
+        "D": "Speaker Recognition"
+      },
+      "correctAnswer": "B",
+      "explanation": "Speech-to-Text converts spoken audio into written text."
+    },
+    {
+      "id": 16,
+      "domain": "Plan and Manage Azure AI",
+      "difficulty": "easy",
+      "question": "What does the temperature parameter control in Azure OpenAI models?",
+      "options": {
+        "A": "Maximum response length",
+        "B": "Response randomness",
+        "C": "Model latency",
+        "D": "Language selection"
+      },
+      "correctAnswer": "B",
+      "explanation": "Temperature controls randomness. Lower values make outputs deterministic while higher values increase creativity."
+    },
+    {
+      "id": 17,
+      "domain": "Knowledge Mining",
+      "difficulty": "easy",
+      "question": "What is the main purpose of embeddings in Azure OpenAI?",
+      "options": {
+        "A": "Generate images",
+        "B": "Convert text into vector representations",
+        "C": "Translate languages",
+        "D": "Detect sentiment"
+      },
+      "correctAnswer": "B",
+      "explanation": "Embeddings convert text into numerical vector representations for similarity search and semantic retrieval."
+    },
+    {
+      "id": 18,
+      "domain": "Speech",
+      "difficulty": "hard",
+      "question": "What does the temperature parameter control in Azure OpenAI models?",
+      "options": {
+        "A": "Maximum response length",
+        "B": "Response randomness",
+        "C": "Model latency",
+        "D": "Language selection"
+      },
+      "correctAnswer": "B",
+      "explanation": "Temperature controls randomness. Lower values make outputs deterministic while higher values increase creativity."
+    },
+    {
+      "id": 19,
+      "domain": "Generative AI",
+      "difficulty": "medium",
+      "question": "Which technique retrieves relevant documents and provides them as context to an LLM?",
+      "options": {
+        "A": "Fine-tuning",
+        "B": "Retrieval Augmented Generation",
+        "C": "Batch inference",
+        "D": "Transfer learning"
+      },
+      "correctAnswer": "B",
+      "explanation": "Retrieval Augmented Generation (RAG) retrieves external knowledge and injects it into prompts."
+    },
+    {
+      "id": 20,
+      "domain": "Generative AI",
+      "difficulty": "hard",
+      "question": "Which Azure service provides prebuilt AI APIs for vision, speech, and language tasks?",
+      "options": {
+        "A": "Azure Cognitive Services",
+        "B": "Azure DevOps",
+        "C": "Azure Kubernetes Service",
+        "D": "Azure Virtual Machines"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Cognitive Services (Azure AI Services) provide prebuilt APIs for vision, speech, language, and decision tasks."
+    },
+    {
+      "id": 21,
+      "domain": "Computer Vision",
+      "difficulty": "hard",
+      "question": "Which Azure AI Vision feature extracts printed and handwritten text from images?",
+      "options": {
+        "A": "Face Detection",
+        "B": "Object Detection",
+        "C": "Read API (OCR)",
+        "D": "Image Tagging"
+      },
+      "correctAnswer": "C",
+      "explanation": "The Read API performs OCR to extract text from images and documents."
+    },
+    {
+      "id": 22,
+      "domain": "Generative AI",
+      "difficulty": "easy",
+      "question": "Which Azure service extracts structured information from documents such as invoices and receipts?",
+      "options": {
+        "A": "Azure Document Intelligence",
+        "B": "Azure AI Vision",
+        "C": "Azure Translator",
+        "D": "Azure Bot Service"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Document Intelligence extracts structured fields, tables, and key-value pairs from documents."
+    },
+    {
+      "id": 23,
+      "domain": "Computer Vision",
+      "difficulty": "medium",
+      "question": "Which Azure service extracts structured information from documents such as invoices and receipts?",
+      "options": {
+        "A": "Azure Document Intelligence",
+        "B": "Azure AI Vision",
+        "C": "Azure Translator",
+        "D": "Azure Bot Service"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Document Intelligence extracts structured fields, tables, and key-value pairs from documents."
+    },
+    {
+      "id": 24,
+      "domain": "Generative AI",
+      "difficulty": "medium",
+      "question": "Which Azure service extracts structured information from documents such as invoices and receipts?",
+      "options": {
+        "A": "Azure Document Intelligence",
+        "B": "Azure AI Vision",
+        "C": "Azure Translator",
+        "D": "Azure Bot Service"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Document Intelligence extracts structured fields, tables, and key-value pairs from documents."
+    },
+    {
+      "id": 25,
+      "domain": "Knowledge Mining",
+      "difficulty": "medium",
+      "question": "What is the main purpose of embeddings in Azure OpenAI?",
+      "options": {
+        "A": "Generate images",
+        "B": "Convert text into vector representations",
+        "C": "Translate languages",
+        "D": "Detect sentiment"
+      },
+      "correctAnswer": "B",
+      "explanation": "Embeddings convert text into numerical vector representations for similarity search and semantic retrieval."
+    },
+    {
+      "id": 26,
+      "domain": "Natural Language Processing",
+      "difficulty": "medium",
+      "question": "Which Azure service provides enterprise search with AI enrichment capabilities?",
+      "options": {
+        "A": "Azure Cosmos DB",
+        "B": "Azure AI Search",
+        "C": "Azure Monitor",
+        "D": "Azure Synapse"
+      },
+      "correctAnswer": "B",
+      "explanation": "Azure AI Search indexes data and enriches it using AI skillsets such as OCR, entity recognition, and key phrase extraction."
+    },
+    {
+      "id": 27,
+      "domain": "Speech",
+      "difficulty": "hard",
+      "question": "Which Azure service extracts structured information from documents such as invoices and receipts?",
+      "options": {
+        "A": "Azure Document Intelligence",
+        "B": "Azure AI Vision",
+        "C": "Azure Translator",
+        "D": "Azure Bot Service"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Document Intelligence extracts structured fields, tables, and key-value pairs from documents."
+    },
+    {
+      "id": 28,
+      "domain": "Generative AI",
+      "difficulty": "hard",
+      "question": "Which Azure AI Language feature identifies positive, negative, or neutral sentiment in text?",
+      "options": {
+        "A": "Sentiment Analysis",
+        "B": "Named Entity Recognition",
+        "C": "Language Detection",
+        "D": "Key Phrase Extraction"
+      },
+      "correctAnswer": "A",
+      "explanation": "Sentiment Analysis determines whether text sentiment is positive, neutral, or negative."
+    },
+    {
+      "id": 29,
+      "domain": "Plan and Manage Azure AI",
+      "difficulty": "hard",
+      "question": "Which Azure AI Language feature identifies positive, negative, or neutral sentiment in text?",
+      "options": {
+        "A": "Sentiment Analysis",
+        "B": "Named Entity Recognition",
+        "C": "Language Detection",
+        "D": "Key Phrase Extraction"
+      },
+      "correctAnswer": "A",
+      "explanation": "Sentiment Analysis determines whether text sentiment is positive, neutral, or negative."
+    },
+    {
+      "id": 30,
+      "domain": "Generative AI",
+      "difficulty": "easy",
+      "question": "Which Azure AI Vision feature extracts printed and handwritten text from images?",
+      "options": {
+        "A": "Face Detection",
+        "B": "Object Detection",
+        "C": "Read API (OCR)",
+        "D": "Image Tagging"
+      },
+      "correctAnswer": "C",
+      "explanation": "The Read API performs OCR to extract text from images and documents."
+    },
+    {
+      "id": 31,
+      "domain": "Plan and Manage Azure AI",
+      "difficulty": "easy",
+      "question": "Which Azure service provides prebuilt AI APIs for vision, speech, and language tasks?",
+      "options": {
+        "A": "Azure Cognitive Services",
+        "B": "Azure DevOps",
+        "C": "Azure Kubernetes Service",
+        "D": "Azure Virtual Machines"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Cognitive Services (Azure AI Services) provide prebuilt APIs for vision, speech, language, and decision tasks."
+    },
+    {
+      "id": 32,
+      "domain": "Document Intelligence",
+      "difficulty": "medium",
+      "question": "Which Azure Speech feature converts spoken audio into text?",
+      "options": {
+        "A": "Text-to-Speech",
+        "B": "Speech-to-Text",
+        "C": "Speech Translation",
+        "D": "Speaker Recognition"
+      },
+      "correctAnswer": "B",
+      "explanation": "Speech-to-Text converts spoken audio into written text."
+    },
+    {
+      "id": 33,
+      "domain": "Generative AI",
+      "difficulty": "hard",
+      "question": "What is the main purpose of embeddings in Azure OpenAI?",
+      "options": {
+        "A": "Generate images",
+        "B": "Convert text into vector representations",
+        "C": "Translate languages",
+        "D": "Detect sentiment"
+      },
+      "correctAnswer": "B",
+      "explanation": "Embeddings convert text into numerical vector representations for similarity search and semantic retrieval."
+    },
+    {
+      "id": 34,
+      "domain": "Speech",
+      "difficulty": "medium",
+      "question": "Which technique retrieves relevant documents and provides them as context to an LLM?",
+      "options": {
+        "A": "Fine-tuning",
+        "B": "Retrieval Augmented Generation",
+        "C": "Batch inference",
+        "D": "Transfer learning"
+      },
+      "correctAnswer": "B",
+      "explanation": "Retrieval Augmented Generation (RAG) retrieves external knowledge and injects it into prompts."
+    },
+    {
+      "id": 35,
+      "domain": "Knowledge Mining",
+      "difficulty": "medium",
+      "question": "Which Azure feature allows secure authentication to Azure services without storing credentials in code?",
+      "options": {
+        "A": "API Keys",
+        "B": "Managed Identity",
+        "C": "Shared Access Signature",
+        "D": "Storage Keys"
+      },
+      "correctAnswer": "B",
+      "explanation": "Managed Identity allows Azure resources to authenticate without storing credentials in code."
+    },
+    {
+      "id": 36,
+      "domain": "Generative AI",
+      "difficulty": "medium",
+      "question": "What is the main purpose of embeddings in Azure OpenAI?",
+      "options": {
+        "A": "Generate images",
+        "B": "Convert text into vector representations",
+        "C": "Translate languages",
+        "D": "Detect sentiment"
+      },
+      "correctAnswer": "B",
+      "explanation": "Embeddings convert text into numerical vector representations for similarity search and semantic retrieval."
+    },
+    {
+      "id": 37,
+      "domain": "Computer Vision",
+      "difficulty": "medium",
+      "question": "Which Azure Speech feature converts spoken audio into text?",
+      "options": {
+        "A": "Text-to-Speech",
+        "B": "Speech-to-Text",
+        "C": "Speech Translation",
+        "D": "Speaker Recognition"
+      },
+      "correctAnswer": "B",
+      "explanation": "Speech-to-Text converts spoken audio into written text."
+    },
+    {
+      "id": 38,
+      "domain": "Generative AI",
+      "difficulty": "hard",
+      "question": "Which Azure Speech feature converts spoken audio into text?",
+      "options": {
+        "A": "Text-to-Speech",
+        "B": "Speech-to-Text",
+        "C": "Speech Translation",
+        "D": "Speaker Recognition"
+      },
+      "correctAnswer": "B",
+      "explanation": "Speech-to-Text converts spoken audio into written text."
+    },
+    {
+      "id": 39,
+      "domain": "Generative AI",
+      "difficulty": "easy",
+      "question": "Which Azure service extracts structured information from documents such as invoices and receipts?",
+      "options": {
+        "A": "Azure Document Intelligence",
+        "B": "Azure AI Vision",
+        "C": "Azure Translator",
+        "D": "Azure Bot Service"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Document Intelligence extracts structured fields, tables, and key-value pairs from documents."
+    },
+    {
+      "id": 40,
+      "domain": "Speech",
+      "difficulty": "medium",
+      "question": "What does the temperature parameter control in Azure OpenAI models?",
+      "options": {
+        "A": "Maximum response length",
+        "B": "Response randomness",
+        "C": "Model latency",
+        "D": "Language selection"
+      },
+      "correctAnswer": "B",
+      "explanation": "Temperature controls randomness. Lower values make outputs deterministic while higher values increase creativity."
+    },
+    {
+      "id": 41,
+      "domain": "Natural Language Processing",
+      "difficulty": "hard",
+      "question": "Which Azure AI Language feature identifies positive, negative, or neutral sentiment in text?",
+      "options": {
+        "A": "Sentiment Analysis",
+        "B": "Named Entity Recognition",
+        "C": "Language Detection",
+        "D": "Key Phrase Extraction"
+      },
+      "correctAnswer": "A",
+      "explanation": "Sentiment Analysis determines whether text sentiment is positive, neutral, or negative."
+    },
+    {
+      "id": 42,
+      "domain": "Document Intelligence",
+      "difficulty": "easy",
+      "question": "Which Azure service provides enterprise search with AI enrichment capabilities?",
+      "options": {
+        "A": "Azure Cosmos DB",
+        "B": "Azure AI Search",
+        "C": "Azure Monitor",
+        "D": "Azure Synapse"
+      },
+      "correctAnswer": "B",
+      "explanation": "Azure AI Search indexes data and enriches it using AI skillsets such as OCR, entity recognition, and key phrase extraction."
+    },
+    {
+      "id": 43,
+      "domain": "Document Intelligence",
+      "difficulty": "hard",
+      "question": "Which Azure Speech feature converts spoken audio into text?",
+      "options": {
+        "A": "Text-to-Speech",
+        "B": "Speech-to-Text",
+        "C": "Speech Translation",
+        "D": "Speaker Recognition"
+      },
+      "correctAnswer": "B",
+      "explanation": "Speech-to-Text converts spoken audio into written text."
+    },
+    {
+      "id": 44,
+      "domain": "Computer Vision",
+      "difficulty": "medium",
+      "question": "Which Azure AI Vision feature extracts printed and handwritten text from images?",
+      "options": {
+        "A": "Face Detection",
+        "B": "Object Detection",
+        "C": "Read API (OCR)",
+        "D": "Image Tagging"
+      },
+      "correctAnswer": "C",
+      "explanation": "The Read API performs OCR to extract text from images and documents."
+    },
+    {
+      "id": 45,
+      "domain": "Plan and Manage Azure AI",
+      "difficulty": "easy",
+      "question": "Which Azure AI Language feature identifies positive, negative, or neutral sentiment in text?",
+      "options": {
+        "A": "Sentiment Analysis",
+        "B": "Named Entity Recognition",
+        "C": "Language Detection",
+        "D": "Key Phrase Extraction"
+      },
+      "correctAnswer": "A",
+      "explanation": "Sentiment Analysis determines whether text sentiment is positive, neutral, or negative."
+    },
+    {
+      "id": 46,
+      "domain": "Knowledge Mining",
+      "difficulty": "easy",
+      "question": "What is the main purpose of embeddings in Azure OpenAI?",
+      "options": {
+        "A": "Generate images",
+        "B": "Convert text into vector representations",
+        "C": "Translate languages",
+        "D": "Detect sentiment"
+      },
+      "correctAnswer": "B",
+      "explanation": "Embeddings convert text into numerical vector representations for similarity search and semantic retrieval."
+    },
+    {
+      "id": 47,
+      "domain": "Speech",
+      "difficulty": "easy",
+      "question": "What does the temperature parameter control in Azure OpenAI models?",
+      "options": {
+        "A": "Maximum response length",
+        "B": "Response randomness",
+        "C": "Model latency",
+        "D": "Language selection"
+      },
+      "correctAnswer": "B",
+      "explanation": "Temperature controls randomness. Lower values make outputs deterministic while higher values increase creativity."
+    },
+    {
+      "id": 48,
+      "domain": "Natural Language Processing",
+      "difficulty": "medium",
+      "question": "Which Azure service provides prebuilt AI APIs for vision, speech, and language tasks?",
+      "options": {
+        "A": "Azure Cognitive Services",
+        "B": "Azure DevOps",
+        "C": "Azure Kubernetes Service",
+        "D": "Azure Virtual Machines"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Cognitive Services (Azure AI Services) provide prebuilt APIs for vision, speech, language, and decision tasks."
+    },
+    {
+      "id": 49,
+      "domain": "Document Intelligence",
+      "difficulty": "hard",
+      "question": "Which Azure AI Language feature identifies positive, negative, or neutral sentiment in text?",
+      "options": {
+        "A": "Sentiment Analysis",
+        "B": "Named Entity Recognition",
+        "C": "Language Detection",
+        "D": "Key Phrase Extraction"
+      },
+      "correctAnswer": "A",
+      "explanation": "Sentiment Analysis determines whether text sentiment is positive, neutral, or negative."
+    },
+    {
+      "id": 50,
+      "domain": "Speech",
+      "difficulty": "hard",
+      "question": "Which Azure service provides prebuilt AI APIs for vision, speech, and language tasks?",
+      "options": {
+        "A": "Azure Cognitive Services",
+        "B": "Azure DevOps",
+        "C": "Azure Kubernetes Service",
+        "D": "Azure Virtual Machines"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Cognitive Services (Azure AI Services) provide prebuilt APIs for vision, speech, language, and decision tasks."
+    },
+    {
+      "id": 51,
+      "domain": "Natural Language Processing",
+      "difficulty": "hard",
+      "question": "Which technique retrieves relevant documents and provides them as context to an LLM?",
+      "options": {
+        "A": "Fine-tuning",
+        "B": "Retrieval Augmented Generation",
+        "C": "Batch inference",
+        "D": "Transfer learning"
+      },
+      "correctAnswer": "B",
+      "explanation": "Retrieval Augmented Generation (RAG) retrieves external knowledge and injects it into prompts."
+    },
+    {
+      "id": 52,
+      "domain": "Computer Vision",
+      "difficulty": "medium",
+      "question": "Which Azure service extracts structured information from documents such as invoices and receipts?",
+      "options": {
+        "A": "Azure Document Intelligence",
+        "B": "Azure AI Vision",
+        "C": "Azure Translator",
+        "D": "Azure Bot Service"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Document Intelligence extracts structured fields, tables, and key-value pairs from documents."
+    },
+    {
+      "id": 53,
+      "domain": "Document Intelligence",
+      "difficulty": "easy",
+      "question": "Which Azure feature allows secure authentication to Azure services without storing credentials in code?",
+      "options": {
+        "A": "API Keys",
+        "B": "Managed Identity",
+        "C": "Shared Access Signature",
+        "D": "Storage Keys"
+      },
+      "correctAnswer": "B",
+      "explanation": "Managed Identity allows Azure resources to authenticate without storing credentials in code."
+    },
+    {
+      "id": 54,
+      "domain": "Natural Language Processing",
+      "difficulty": "hard",
+      "question": "Which Azure service provides prebuilt AI APIs for vision, speech, and language tasks?",
+      "options": {
+        "A": "Azure Cognitive Services",
+        "B": "Azure DevOps",
+        "C": "Azure Kubernetes Service",
+        "D": "Azure Virtual Machines"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Cognitive Services (Azure AI Services) provide prebuilt APIs for vision, speech, language, and decision tasks."
+    },
+    {
+      "id": 55,
+      "domain": "Generative AI",
+      "difficulty": "hard",
+      "question": "Which Azure service provides enterprise search with AI enrichment capabilities?",
+      "options": {
+        "A": "Azure Cosmos DB",
+        "B": "Azure AI Search",
+        "C": "Azure Monitor",
+        "D": "Azure Synapse"
+      },
+      "correctAnswer": "B",
+      "explanation": "Azure AI Search indexes data and enriches it using AI skillsets such as OCR, entity recognition, and key phrase extraction."
+    },
+    {
+      "id": 56,
+      "domain": "Document Intelligence",
+      "difficulty": "hard",
+      "question": "What is the main purpose of embeddings in Azure OpenAI?",
+      "options": {
+        "A": "Generate images",
+        "B": "Convert text into vector representations",
+        "C": "Translate languages",
+        "D": "Detect sentiment"
+      },
+      "correctAnswer": "B",
+      "explanation": "Embeddings convert text into numerical vector representations for similarity search and semantic retrieval."
+    },
+    {
+      "id": 57,
+      "domain": "Document Intelligence",
+      "difficulty": "medium",
+      "question": "Which Azure service provides prebuilt AI APIs for vision, speech, and language tasks?",
+      "options": {
+        "A": "Azure Cognitive Services",
+        "B": "Azure DevOps",
+        "C": "Azure Kubernetes Service",
+        "D": "Azure Virtual Machines"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Cognitive Services (Azure AI Services) provide prebuilt APIs for vision, speech, language, and decision tasks."
+    },
+    {
+      "id": 58,
+      "domain": "Computer Vision",
+      "difficulty": "medium",
+      "question": "Which Azure service extracts structured information from documents such as invoices and receipts?",
+      "options": {
+        "A": "Azure Document Intelligence",
+        "B": "Azure AI Vision",
+        "C": "Azure Translator",
+        "D": "Azure Bot Service"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Document Intelligence extracts structured fields, tables, and key-value pairs from documents."
+    },
+    {
+      "id": 59,
+      "domain": "Natural Language Processing",
+      "difficulty": "hard",
+      "question": "Which Azure feature allows secure authentication to Azure services without storing credentials in code?",
+      "options": {
+        "A": "API Keys",
+        "B": "Managed Identity",
+        "C": "Shared Access Signature",
+        "D": "Storage Keys"
+      },
+      "correctAnswer": "B",
+      "explanation": "Managed Identity allows Azure resources to authenticate without storing credentials in code."
+    },
+    {
+      "id": 60,
+      "domain": "Natural Language Processing",
+      "difficulty": "medium",
+      "question": "Which Azure service extracts structured information from documents such as invoices and receipts?",
+      "options": {
+        "A": "Azure Document Intelligence",
+        "B": "Azure AI Vision",
+        "C": "Azure Translator",
+        "D": "Azure Bot Service"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Document Intelligence extracts structured fields, tables, and key-value pairs from documents."
+    },
+    {
+      "id": 61,
+      "domain": "Speech",
+      "difficulty": "hard",
+      "question": "Which Azure service extracts structured information from documents such as invoices and receipts?",
+      "options": {
+        "A": "Azure Document Intelligence",
+        "B": "Azure AI Vision",
+        "C": "Azure Translator",
+        "D": "Azure Bot Service"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Document Intelligence extracts structured fields, tables, and key-value pairs from documents."
+    },
+    {
+      "id": 62,
+      "domain": "Plan and Manage Azure AI",
+      "difficulty": "medium",
+      "question": "Which Azure service provides prebuilt AI APIs for vision, speech, and language tasks?",
+      "options": {
+        "A": "Azure Cognitive Services",
+        "B": "Azure DevOps",
+        "C": "Azure Kubernetes Service",
+        "D": "Azure Virtual Machines"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Cognitive Services (Azure AI Services) provide prebuilt APIs for vision, speech, language, and decision tasks."
+    },
+    {
+      "id": 63,
+      "domain": "Generative AI",
+      "difficulty": "easy",
+      "question": "Which Azure Speech feature converts spoken audio into text?",
+      "options": {
+        "A": "Text-to-Speech",
+        "B": "Speech-to-Text",
+        "C": "Speech Translation",
+        "D": "Speaker Recognition"
+      },
+      "correctAnswer": "B",
+      "explanation": "Speech-to-Text converts spoken audio into written text."
+    },
+    {
+      "id": 64,
+      "domain": "Computer Vision",
+      "difficulty": "easy",
+      "question": "Which Azure service provides enterprise search with AI enrichment capabilities?",
+      "options": {
+        "A": "Azure Cosmos DB",
+        "B": "Azure AI Search",
+        "C": "Azure Monitor",
+        "D": "Azure Synapse"
+      },
+      "correctAnswer": "B",
+      "explanation": "Azure AI Search indexes data and enriches it using AI skillsets such as OCR, entity recognition, and key phrase extraction."
+    },
+    {
+      "id": 65,
+      "domain": "Plan and Manage Azure AI",
+      "difficulty": "easy",
+      "question": "What is the main purpose of embeddings in Azure OpenAI?",
+      "options": {
+        "A": "Generate images",
+        "B": "Convert text into vector representations",
+        "C": "Translate languages",
+        "D": "Detect sentiment"
+      },
+      "correctAnswer": "B",
+      "explanation": "Embeddings convert text into numerical vector representations for similarity search and semantic retrieval."
+    },
+    {
+      "id": 66,
+      "domain": "Speech",
+      "difficulty": "hard",
+      "question": "Which Azure feature allows secure authentication to Azure services without storing credentials in code?",
+      "options": {
+        "A": "API Keys",
+        "B": "Managed Identity",
+        "C": "Shared Access Signature",
+        "D": "Storage Keys"
+      },
+      "correctAnswer": "B",
+      "explanation": "Managed Identity allows Azure resources to authenticate without storing credentials in code."
+    },
+    {
+      "id": 67,
+      "domain": "Document Intelligence",
+      "difficulty": "hard",
+      "question": "Which Azure service extracts structured information from documents such as invoices and receipts?",
+      "options": {
+        "A": "Azure Document Intelligence",
+        "B": "Azure AI Vision",
+        "C": "Azure Translator",
+        "D": "Azure Bot Service"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Document Intelligence extracts structured fields, tables, and key-value pairs from documents."
+    },
+    {
+      "id": 68,
+      "domain": "Computer Vision",
+      "difficulty": "medium",
+      "question": "What does the temperature parameter control in Azure OpenAI models?",
+      "options": {
+        "A": "Maximum response length",
+        "B": "Response randomness",
+        "C": "Model latency",
+        "D": "Language selection"
+      },
+      "correctAnswer": "B",
+      "explanation": "Temperature controls randomness. Lower values make outputs deterministic while higher values increase creativity."
+    },
+    {
+      "id": 69,
+      "domain": "Generative AI",
+      "difficulty": "hard",
+      "question": "Which Azure service provides prebuilt AI APIs for vision, speech, and language tasks?",
+      "options": {
+        "A": "Azure Cognitive Services",
+        "B": "Azure DevOps",
+        "C": "Azure Kubernetes Service",
+        "D": "Azure Virtual Machines"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Cognitive Services (Azure AI Services) provide prebuilt APIs for vision, speech, language, and decision tasks."
+    },
+    {
+      "id": 70,
+      "domain": "Computer Vision",
+      "difficulty": "medium",
+      "question": "Which Azure service provides enterprise search with AI enrichment capabilities?",
+      "options": {
+        "A": "Azure Cosmos DB",
+        "B": "Azure AI Search",
+        "C": "Azure Monitor",
+        "D": "Azure Synapse"
+      },
+      "correctAnswer": "B",
+      "explanation": "Azure AI Search indexes data and enriches it using AI skillsets such as OCR, entity recognition, and key phrase extraction."
+    },
+    {
+      "id": 71,
+      "domain": "Natural Language Processing",
+      "difficulty": "medium",
+      "question": "Which Azure service provides prebuilt AI APIs for vision, speech, and language tasks?",
+      "options": {
+        "A": "Azure Cognitive Services",
+        "B": "Azure DevOps",
+        "C": "Azure Kubernetes Service",
+        "D": "Azure Virtual Machines"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Cognitive Services (Azure AI Services) provide prebuilt APIs for vision, speech, language, and decision tasks."
+    },
+    {
+      "id": 72,
+      "domain": "Speech",
+      "difficulty": "easy",
+      "question": "Which Azure service provides enterprise search with AI enrichment capabilities?",
+      "options": {
+        "A": "Azure Cosmos DB",
+        "B": "Azure AI Search",
+        "C": "Azure Monitor",
+        "D": "Azure Synapse"
+      },
+      "correctAnswer": "B",
+      "explanation": "Azure AI Search indexes data and enriches it using AI skillsets such as OCR, entity recognition, and key phrase extraction."
+    },
+    {
+      "id": 73,
+      "domain": "Natural Language Processing",
+      "difficulty": "easy",
+      "question": "Which Azure Speech feature converts spoken audio into text?",
+      "options": {
+        "A": "Text-to-Speech",
+        "B": "Speech-to-Text",
+        "C": "Speech Translation",
+        "D": "Speaker Recognition"
+      },
+      "correctAnswer": "B",
+      "explanation": "Speech-to-Text converts spoken audio into written text."
+    },
+    {
+      "id": 74,
+      "domain": "Document Intelligence",
+      "difficulty": "easy",
+      "question": "Which Azure service provides enterprise search with AI enrichment capabilities?",
+      "options": {
+        "A": "Azure Cosmos DB",
+        "B": "Azure AI Search",
+        "C": "Azure Monitor",
+        "D": "Azure Synapse"
+      },
+      "correctAnswer": "B",
+      "explanation": "Azure AI Search indexes data and enriches it using AI skillsets such as OCR, entity recognition, and key phrase extraction."
+    },
+    {
+      "id": 75,
+      "domain": "Knowledge Mining",
+      "difficulty": "hard",
+      "question": "Which Azure AI Vision feature extracts printed and handwritten text from images?",
+      "options": {
+        "A": "Face Detection",
+        "B": "Object Detection",
+        "C": "Read API (OCR)",
+        "D": "Image Tagging"
+      },
+      "correctAnswer": "C",
+      "explanation": "The Read API performs OCR to extract text from images and documents."
+    },
+    {
+      "id": 76,
+      "domain": "Generative AI",
+      "difficulty": "hard",
+      "question": "Which Azure feature allows secure authentication to Azure services without storing credentials in code?",
+      "options": {
+        "A": "API Keys",
+        "B": "Managed Identity",
+        "C": "Shared Access Signature",
+        "D": "Storage Keys"
+      },
+      "correctAnswer": "B",
+      "explanation": "Managed Identity allows Azure resources to authenticate without storing credentials in code."
+    },
+    {
+      "id": 77,
+      "domain": "Computer Vision",
+      "difficulty": "hard",
+      "question": "Which Azure service provides prebuilt AI APIs for vision, speech, and language tasks?",
+      "options": {
+        "A": "Azure Cognitive Services",
+        "B": "Azure DevOps",
+        "C": "Azure Kubernetes Service",
+        "D": "Azure Virtual Machines"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Cognitive Services (Azure AI Services) provide prebuilt APIs for vision, speech, language, and decision tasks."
+    },
+    {
+      "id": 78,
+      "domain": "Speech",
+      "difficulty": "medium",
+      "question": "Which Azure AI Language feature identifies positive, negative, or neutral sentiment in text?",
+      "options": {
+        "A": "Sentiment Analysis",
+        "B": "Named Entity Recognition",
+        "C": "Language Detection",
+        "D": "Key Phrase Extraction"
+      },
+      "correctAnswer": "A",
+      "explanation": "Sentiment Analysis determines whether text sentiment is positive, neutral, or negative."
+    },
+    {
+      "id": 79,
+      "domain": "Speech",
+      "difficulty": "medium",
+      "question": "Which Azure service provides prebuilt AI APIs for vision, speech, and language tasks?",
+      "options": {
+        "A": "Azure Cognitive Services",
+        "B": "Azure DevOps",
+        "C": "Azure Kubernetes Service",
+        "D": "Azure Virtual Machines"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Cognitive Services (Azure AI Services) provide prebuilt APIs for vision, speech, language, and decision tasks."
+    },
+    {
+      "id": 80,
+      "domain": "Plan and Manage Azure AI",
+      "difficulty": "hard",
+      "question": "Which Azure feature allows secure authentication to Azure services without storing credentials in code?",
+      "options": {
+        "A": "API Keys",
+        "B": "Managed Identity",
+        "C": "Shared Access Signature",
+        "D": "Storage Keys"
+      },
+      "correctAnswer": "B",
+      "explanation": "Managed Identity allows Azure resources to authenticate without storing credentials in code."
+    },
+    {
+      "id": 81,
+      "domain": "Natural Language Processing",
+      "difficulty": "easy",
+      "question": "Which Azure feature allows secure authentication to Azure services without storing credentials in code?",
+      "options": {
+        "A": "API Keys",
+        "B": "Managed Identity",
+        "C": "Shared Access Signature",
+        "D": "Storage Keys"
+      },
+      "correctAnswer": "B",
+      "explanation": "Managed Identity allows Azure resources to authenticate without storing credentials in code."
+    },
+    {
+      "id": 82,
+      "domain": "Knowledge Mining",
+      "difficulty": "medium",
+      "question": "What is the main purpose of embeddings in Azure OpenAI?",
+      "options": {
+        "A": "Generate images",
+        "B": "Convert text into vector representations",
+        "C": "Translate languages",
+        "D": "Detect sentiment"
+      },
+      "correctAnswer": "B",
+      "explanation": "Embeddings convert text into numerical vector representations for similarity search and semantic retrieval."
+    },
+    {
+      "id": 83,
+      "domain": "Document Intelligence",
+      "difficulty": "medium",
+      "question": "Which Azure service provides enterprise search with AI enrichment capabilities?",
+      "options": {
+        "A": "Azure Cosmos DB",
+        "B": "Azure AI Search",
+        "C": "Azure Monitor",
+        "D": "Azure Synapse"
+      },
+      "correctAnswer": "B",
+      "explanation": "Azure AI Search indexes data and enriches it using AI skillsets such as OCR, entity recognition, and key phrase extraction."
+    },
+    {
+      "id": 84,
+      "domain": "Speech",
+      "difficulty": "hard",
+      "question": "Which Azure service provides prebuilt AI APIs for vision, speech, and language tasks?",
+      "options": {
+        "A": "Azure Cognitive Services",
+        "B": "Azure DevOps",
+        "C": "Azure Kubernetes Service",
+        "D": "Azure Virtual Machines"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Cognitive Services (Azure AI Services) provide prebuilt APIs for vision, speech, language, and decision tasks."
+    },
+    {
+      "id": 85,
+      "domain": "Speech",
+      "difficulty": "hard",
+      "question": "Which technique retrieves relevant documents and provides them as context to an LLM?",
+      "options": {
+        "A": "Fine-tuning",
+        "B": "Retrieval Augmented Generation",
+        "C": "Batch inference",
+        "D": "Transfer learning"
+      },
+      "correctAnswer": "B",
+      "explanation": "Retrieval Augmented Generation (RAG) retrieves external knowledge and injects it into prompts."
+    },
+    {
+      "id": 86,
+      "domain": "Speech",
+      "difficulty": "medium",
+      "question": "Which Azure Speech feature converts spoken audio into text?",
+      "options": {
+        "A": "Text-to-Speech",
+        "B": "Speech-to-Text",
+        "C": "Speech Translation",
+        "D": "Speaker Recognition"
+      },
+      "correctAnswer": "B",
+      "explanation": "Speech-to-Text converts spoken audio into written text."
+    },
+    {
+      "id": 87,
+      "domain": "Knowledge Mining",
+      "difficulty": "hard",
+      "question": "Which Azure service provides prebuilt AI APIs for vision, speech, and language tasks?",
+      "options": {
+        "A": "Azure Cognitive Services",
+        "B": "Azure DevOps",
+        "C": "Azure Kubernetes Service",
+        "D": "Azure Virtual Machines"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Cognitive Services (Azure AI Services) provide prebuilt APIs for vision, speech, language, and decision tasks."
+    },
+    {
+      "id": 88,
+      "domain": "Speech",
+      "difficulty": "hard",
+      "question": "Which Azure Speech feature converts spoken audio into text?",
+      "options": {
+        "A": "Text-to-Speech",
+        "B": "Speech-to-Text",
+        "C": "Speech Translation",
+        "D": "Speaker Recognition"
+      },
+      "correctAnswer": "B",
+      "explanation": "Speech-to-Text converts spoken audio into written text."
+    },
+    {
+      "id": 89,
+      "domain": "Natural Language Processing",
+      "difficulty": "medium",
+      "question": "Which Azure service provides enterprise search with AI enrichment capabilities?",
+      "options": {
+        "A": "Azure Cosmos DB",
+        "B": "Azure AI Search",
+        "C": "Azure Monitor",
+        "D": "Azure Synapse"
+      },
+      "correctAnswer": "B",
+      "explanation": "Azure AI Search indexes data and enriches it using AI skillsets such as OCR, entity recognition, and key phrase extraction."
+    },
+    {
+      "id": 90,
+      "domain": "Speech",
+      "difficulty": "hard",
+      "question": "Which Azure service extracts structured information from documents such as invoices and receipts?",
+      "options": {
+        "A": "Azure Document Intelligence",
+        "B": "Azure AI Vision",
+        "C": "Azure Translator",
+        "D": "Azure Bot Service"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Document Intelligence extracts structured fields, tables, and key-value pairs from documents."
+    },
+    {
+      "id": 91,
+      "domain": "Natural Language Processing",
+      "difficulty": "medium",
+      "question": "Which Azure feature allows secure authentication to Azure services without storing credentials in code?",
+      "options": {
+        "A": "API Keys",
+        "B": "Managed Identity",
+        "C": "Shared Access Signature",
+        "D": "Storage Keys"
+      },
+      "correctAnswer": "B",
+      "explanation": "Managed Identity allows Azure resources to authenticate without storing credentials in code."
+    },
+    {
+      "id": 92,
+      "domain": "Speech",
+      "difficulty": "medium",
+      "question": "Which Azure service extracts structured information from documents such as invoices and receipts?",
+      "options": {
+        "A": "Azure Document Intelligence",
+        "B": "Azure AI Vision",
+        "C": "Azure Translator",
+        "D": "Azure Bot Service"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Document Intelligence extracts structured fields, tables, and key-value pairs from documents."
+    },
+    {
+      "id": 93,
+      "domain": "Natural Language Processing",
+      "difficulty": "easy",
+      "question": "Which Azure service provides enterprise search with AI enrichment capabilities?",
+      "options": {
+        "A": "Azure Cosmos DB",
+        "B": "Azure AI Search",
+        "C": "Azure Monitor",
+        "D": "Azure Synapse"
+      },
+      "correctAnswer": "B",
+      "explanation": "Azure AI Search indexes data and enriches it using AI skillsets such as OCR, entity recognition, and key phrase extraction."
+    },
+    {
+      "id": 94,
+      "domain": "Natural Language Processing",
+      "difficulty": "medium",
+      "question": "Which Azure AI Vision feature extracts printed and handwritten text from images?",
+      "options": {
+        "A": "Face Detection",
+        "B": "Object Detection",
+        "C": "Read API (OCR)",
+        "D": "Image Tagging"
+      },
+      "correctAnswer": "C",
+      "explanation": "The Read API performs OCR to extract text from images and documents."
+    },
+    {
+      "id": 95,
+      "domain": "Knowledge Mining",
+      "difficulty": "easy",
+      "question": "Which Azure Speech feature converts spoken audio into text?",
+      "options": {
+        "A": "Text-to-Speech",
+        "B": "Speech-to-Text",
+        "C": "Speech Translation",
+        "D": "Speaker Recognition"
+      },
+      "correctAnswer": "B",
+      "explanation": "Speech-to-Text converts spoken audio into written text."
+    },
+    {
+      "id": 96,
+      "domain": "Plan and Manage Azure AI",
+      "difficulty": "hard",
+      "question": "Which technique retrieves relevant documents and provides them as context to an LLM?",
+      "options": {
+        "A": "Fine-tuning",
+        "B": "Retrieval Augmented Generation",
+        "C": "Batch inference",
+        "D": "Transfer learning"
+      },
+      "correctAnswer": "B",
+      "explanation": "Retrieval Augmented Generation (RAG) retrieves external knowledge and injects it into prompts."
+    },
+    {
+      "id": 97,
+      "domain": "Computer Vision",
+      "difficulty": "easy",
+      "question": "Which technique retrieves relevant documents and provides them as context to an LLM?",
+      "options": {
+        "A": "Fine-tuning",
+        "B": "Retrieval Augmented Generation",
+        "C": "Batch inference",
+        "D": "Transfer learning"
+      },
+      "correctAnswer": "B",
+      "explanation": "Retrieval Augmented Generation (RAG) retrieves external knowledge and injects it into prompts."
+    },
+    {
+      "id": 98,
+      "domain": "Plan and Manage Azure AI",
+      "difficulty": "easy",
+      "question": "Which Azure Speech feature converts spoken audio into text?",
+      "options": {
+        "A": "Text-to-Speech",
+        "B": "Speech-to-Text",
+        "C": "Speech Translation",
+        "D": "Speaker Recognition"
+      },
+      "correctAnswer": "B",
+      "explanation": "Speech-to-Text converts spoken audio into written text."
+    },
+    {
+      "id": 99,
+      "domain": "Document Intelligence",
+      "difficulty": "easy",
+      "question": "Which Azure service extracts structured information from documents such as invoices and receipts?",
+      "options": {
+        "A": "Azure Document Intelligence",
+        "B": "Azure AI Vision",
+        "C": "Azure Translator",
+        "D": "Azure Bot Service"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Document Intelligence extracts structured fields, tables, and key-value pairs from documents."
+    },
+    {
+      "id": 100,
+      "domain": "Plan and Manage Azure AI",
+      "difficulty": "medium",
+      "question": "Which Azure service provides enterprise search with AI enrichment capabilities?",
+      "options": {
+        "A": "Azure Cosmos DB",
+        "B": "Azure AI Search",
+        "C": "Azure Monitor",
+        "D": "Azure Synapse"
+      },
+      "correctAnswer": "B",
+      "explanation": "Azure AI Search indexes data and enriches it using AI skillsets such as OCR, entity recognition, and key phrase extraction."
+    },
+    {
+      "id": 101,
+      "domain": "Plan and Manage Azure AI",
+      "difficulty": "easy",
+      "question": "Which technique retrieves relevant documents and provides them as context to an LLM?",
+      "options": {
+        "A": "Fine-tuning",
+        "B": "Retrieval Augmented Generation",
+        "C": "Batch inference",
+        "D": "Transfer learning"
+      },
+      "correctAnswer": "B",
+      "explanation": "Retrieval Augmented Generation (RAG) retrieves external knowledge and injects it into prompts."
+    },
+    {
+      "id": 102,
+      "domain": "Document Intelligence",
+      "difficulty": "hard",
+      "question": "Which Azure feature allows secure authentication to Azure services without storing credentials in code?",
+      "options": {
+        "A": "API Keys",
+        "B": "Managed Identity",
+        "C": "Shared Access Signature",
+        "D": "Storage Keys"
+      },
+      "correctAnswer": "B",
+      "explanation": "Managed Identity allows Azure resources to authenticate without storing credentials in code."
+    },
+    {
+      "id": 103,
+      "domain": "Generative AI",
+      "difficulty": "easy",
+      "question": "Which Azure service provides enterprise search with AI enrichment capabilities?",
+      "options": {
+        "A": "Azure Cosmos DB",
+        "B": "Azure AI Search",
+        "C": "Azure Monitor",
+        "D": "Azure Synapse"
+      },
+      "correctAnswer": "B",
+      "explanation": "Azure AI Search indexes data and enriches it using AI skillsets such as OCR, entity recognition, and key phrase extraction."
+    },
+    {
+      "id": 104,
+      "domain": "Natural Language Processing",
+      "difficulty": "easy",
+      "question": "Which Azure service extracts structured information from documents such as invoices and receipts?",
+      "options": {
+        "A": "Azure Document Intelligence",
+        "B": "Azure AI Vision",
+        "C": "Azure Translator",
+        "D": "Azure Bot Service"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Document Intelligence extracts structured fields, tables, and key-value pairs from documents."
+    },
+    {
+      "id": 105,
+      "domain": "Natural Language Processing",
+      "difficulty": "medium",
+      "question": "Which Azure AI Language feature identifies positive, negative, or neutral sentiment in text?",
+      "options": {
+        "A": "Sentiment Analysis",
+        "B": "Named Entity Recognition",
+        "C": "Language Detection",
+        "D": "Key Phrase Extraction"
+      },
+      "correctAnswer": "A",
+      "explanation": "Sentiment Analysis determines whether text sentiment is positive, neutral, or negative."
+    },
+    {
+      "id": 106,
+      "domain": "Knowledge Mining",
+      "difficulty": "medium",
+      "question": "Which Azure AI Language feature identifies positive, negative, or neutral sentiment in text?",
+      "options": {
+        "A": "Sentiment Analysis",
+        "B": "Named Entity Recognition",
+        "C": "Language Detection",
+        "D": "Key Phrase Extraction"
+      },
+      "correctAnswer": "A",
+      "explanation": "Sentiment Analysis determines whether text sentiment is positive, neutral, or negative."
+    },
+    {
+      "id": 107,
+      "domain": "Natural Language Processing",
+      "difficulty": "easy",
+      "question": "Which Azure service provides prebuilt AI APIs for vision, speech, and language tasks?",
+      "options": {
+        "A": "Azure Cognitive Services",
+        "B": "Azure DevOps",
+        "C": "Azure Kubernetes Service",
+        "D": "Azure Virtual Machines"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Cognitive Services (Azure AI Services) provide prebuilt APIs for vision, speech, language, and decision tasks."
+    },
+    {
+      "id": 108,
+      "domain": "Plan and Manage Azure AI",
+      "difficulty": "hard",
+      "question": "Which Azure AI Vision feature extracts printed and handwritten text from images?",
+      "options": {
+        "A": "Face Detection",
+        "B": "Object Detection",
+        "C": "Read API (OCR)",
+        "D": "Image Tagging"
+      },
+      "correctAnswer": "C",
+      "explanation": "The Read API performs OCR to extract text from images and documents."
+    },
+    {
+      "id": 109,
+      "domain": "Generative AI",
+      "difficulty": "hard",
+      "question": "Which Azure service extracts structured information from documents such as invoices and receipts?",
+      "options": {
+        "A": "Azure Document Intelligence",
+        "B": "Azure AI Vision",
+        "C": "Azure Translator",
+        "D": "Azure Bot Service"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Document Intelligence extracts structured fields, tables, and key-value pairs from documents."
+    },
+    {
+      "id": 110,
+      "domain": "Computer Vision",
+      "difficulty": "easy",
+      "question": "Which Azure service provides enterprise search with AI enrichment capabilities?",
+      "options": {
+        "A": "Azure Cosmos DB",
+        "B": "Azure AI Search",
+        "C": "Azure Monitor",
+        "D": "Azure Synapse"
+      },
+      "correctAnswer": "B",
+      "explanation": "Azure AI Search indexes data and enriches it using AI skillsets such as OCR, entity recognition, and key phrase extraction."
+    },
+    {
+      "id": 111,
+      "domain": "Natural Language Processing",
+      "difficulty": "medium",
+      "question": "Which Azure feature allows secure authentication to Azure services without storing credentials in code?",
+      "options": {
+        "A": "API Keys",
+        "B": "Managed Identity",
+        "C": "Shared Access Signature",
+        "D": "Storage Keys"
+      },
+      "correctAnswer": "B",
+      "explanation": "Managed Identity allows Azure resources to authenticate without storing credentials in code."
+    },
+    {
+      "id": 112,
+      "domain": "Speech",
+      "difficulty": "easy",
+      "question": "Which technique retrieves relevant documents and provides them as context to an LLM?",
+      "options": {
+        "A": "Fine-tuning",
+        "B": "Retrieval Augmented Generation",
+        "C": "Batch inference",
+        "D": "Transfer learning"
+      },
+      "correctAnswer": "B",
+      "explanation": "Retrieval Augmented Generation (RAG) retrieves external knowledge and injects it into prompts."
+    },
+    {
+      "id": 113,
+      "domain": "Knowledge Mining",
+      "difficulty": "hard",
+      "question": "What is the main purpose of embeddings in Azure OpenAI?",
+      "options": {
+        "A": "Generate images",
+        "B": "Convert text into vector representations",
+        "C": "Translate languages",
+        "D": "Detect sentiment"
+      },
+      "correctAnswer": "B",
+      "explanation": "Embeddings convert text into numerical vector representations for similarity search and semantic retrieval."
+    },
+    {
+      "id": 114,
+      "domain": "Computer Vision",
+      "difficulty": "medium",
+      "question": "Which Azure service extracts structured information from documents such as invoices and receipts?",
+      "options": {
+        "A": "Azure Document Intelligence",
+        "B": "Azure AI Vision",
+        "C": "Azure Translator",
+        "D": "Azure Bot Service"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Document Intelligence extracts structured fields, tables, and key-value pairs from documents."
+    },
+    {
+      "id": 115,
+      "domain": "Generative AI",
+      "difficulty": "hard",
+      "question": "Which Azure AI Vision feature extracts printed and handwritten text from images?",
+      "options": {
+        "A": "Face Detection",
+        "B": "Object Detection",
+        "C": "Read API (OCR)",
+        "D": "Image Tagging"
+      },
+      "correctAnswer": "C",
+      "explanation": "The Read API performs OCR to extract text from images and documents."
+    },
+    {
+      "id": 116,
+      "domain": "Speech",
+      "difficulty": "medium",
+      "question": "Which Azure AI Language feature identifies positive, negative, or neutral sentiment in text?",
+      "options": {
+        "A": "Sentiment Analysis",
+        "B": "Named Entity Recognition",
+        "C": "Language Detection",
+        "D": "Key Phrase Extraction"
+      },
+      "correctAnswer": "A",
+      "explanation": "Sentiment Analysis determines whether text sentiment is positive, neutral, or negative."
+    },
+    {
+      "id": 117,
+      "domain": "Knowledge Mining",
+      "difficulty": "hard",
+      "question": "Which technique retrieves relevant documents and provides them as context to an LLM?",
+      "options": {
+        "A": "Fine-tuning",
+        "B": "Retrieval Augmented Generation",
+        "C": "Batch inference",
+        "D": "Transfer learning"
+      },
+      "correctAnswer": "B",
+      "explanation": "Retrieval Augmented Generation (RAG) retrieves external knowledge and injects it into prompts."
+    },
+    {
+      "id": 118,
+      "domain": "Natural Language Processing",
+      "difficulty": "hard",
+      "question": "What is the main purpose of embeddings in Azure OpenAI?",
+      "options": {
+        "A": "Generate images",
+        "B": "Convert text into vector representations",
+        "C": "Translate languages",
+        "D": "Detect sentiment"
+      },
+      "correctAnswer": "B",
+      "explanation": "Embeddings convert text into numerical vector representations for similarity search and semantic retrieval."
+    },
+    {
+      "id": 119,
+      "domain": "Knowledge Mining",
+      "difficulty": "medium",
+      "question": "Which Azure service provides enterprise search with AI enrichment capabilities?",
+      "options": {
+        "A": "Azure Cosmos DB",
+        "B": "Azure AI Search",
+        "C": "Azure Monitor",
+        "D": "Azure Synapse"
+      },
+      "correctAnswer": "B",
+      "explanation": "Azure AI Search indexes data and enriches it using AI skillsets such as OCR, entity recognition, and key phrase extraction."
+    },
+    {
+      "id": 120,
+      "domain": "Knowledge Mining",
+      "difficulty": "hard",
+      "question": "Which Azure service provides prebuilt AI APIs for vision, speech, and language tasks?",
+      "options": {
+        "A": "Azure Cognitive Services",
+        "B": "Azure DevOps",
+        "C": "Azure Kubernetes Service",
+        "D": "Azure Virtual Machines"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Cognitive Services (Azure AI Services) provide prebuilt APIs for vision, speech, language, and decision tasks."
+    },
+    {
+      "id": 121,
+      "domain": "Plan and Manage Azure AI",
+      "difficulty": "hard",
+      "question": "What is the main purpose of embeddings in Azure OpenAI?",
+      "options": {
+        "A": "Generate images",
+        "B": "Convert text into vector representations",
+        "C": "Translate languages",
+        "D": "Detect sentiment"
+      },
+      "correctAnswer": "B",
+      "explanation": "Embeddings convert text into numerical vector representations for similarity search and semantic retrieval."
+    },
+    {
+      "id": 122,
+      "domain": "Speech",
+      "difficulty": "easy",
+      "question": "Which technique retrieves relevant documents and provides them as context to an LLM?",
+      "options": {
+        "A": "Fine-tuning",
+        "B": "Retrieval Augmented Generation",
+        "C": "Batch inference",
+        "D": "Transfer learning"
+      },
+      "correctAnswer": "B",
+      "explanation": "Retrieval Augmented Generation (RAG) retrieves external knowledge and injects it into prompts."
+    },
+    {
+      "id": 123,
+      "domain": "Knowledge Mining",
+      "difficulty": "medium",
+      "question": "Which Azure service provides enterprise search with AI enrichment capabilities?",
+      "options": {
+        "A": "Azure Cosmos DB",
+        "B": "Azure AI Search",
+        "C": "Azure Monitor",
+        "D": "Azure Synapse"
+      },
+      "correctAnswer": "B",
+      "explanation": "Azure AI Search indexes data and enriches it using AI skillsets such as OCR, entity recognition, and key phrase extraction."
+    },
+    {
+      "id": 124,
+      "domain": "Knowledge Mining",
+      "difficulty": "easy",
+      "question": "Which Azure feature allows secure authentication to Azure services without storing credentials in code?",
+      "options": {
+        "A": "API Keys",
+        "B": "Managed Identity",
+        "C": "Shared Access Signature",
+        "D": "Storage Keys"
+      },
+      "correctAnswer": "B",
+      "explanation": "Managed Identity allows Azure resources to authenticate without storing credentials in code."
+    },
+    {
+      "id": 125,
+      "domain": "Computer Vision",
+      "difficulty": "easy",
+      "question": "Which Azure AI Language feature identifies positive, negative, or neutral sentiment in text?",
+      "options": {
+        "A": "Sentiment Analysis",
+        "B": "Named Entity Recognition",
+        "C": "Language Detection",
+        "D": "Key Phrase Extraction"
+      },
+      "correctAnswer": "A",
+      "explanation": "Sentiment Analysis determines whether text sentiment is positive, neutral, or negative."
+    },
+    {
+      "id": 126,
+      "domain": "Document Intelligence",
+      "difficulty": "hard",
+      "question": "What does the temperature parameter control in Azure OpenAI models?",
+      "options": {
+        "A": "Maximum response length",
+        "B": "Response randomness",
+        "C": "Model latency",
+        "D": "Language selection"
+      },
+      "correctAnswer": "B",
+      "explanation": "Temperature controls randomness. Lower values make outputs deterministic while higher values increase creativity."
+    },
+    {
+      "id": 127,
+      "domain": "Document Intelligence",
+      "difficulty": "easy",
+      "question": "What is the main purpose of embeddings in Azure OpenAI?",
+      "options": {
+        "A": "Generate images",
+        "B": "Convert text into vector representations",
+        "C": "Translate languages",
+        "D": "Detect sentiment"
+      },
+      "correctAnswer": "B",
+      "explanation": "Embeddings convert text into numerical vector representations for similarity search and semantic retrieval."
+    },
+    {
+      "id": 128,
+      "domain": "Speech",
+      "difficulty": "easy",
+      "question": "What does the temperature parameter control in Azure OpenAI models?",
+      "options": {
+        "A": "Maximum response length",
+        "B": "Response randomness",
+        "C": "Model latency",
+        "D": "Language selection"
+      },
+      "correctAnswer": "B",
+      "explanation": "Temperature controls randomness. Lower values make outputs deterministic while higher values increase creativity."
+    },
+    {
+      "id": 129,
+      "domain": "Speech",
+      "difficulty": "easy",
+      "question": "Which Azure service provides enterprise search with AI enrichment capabilities?",
+      "options": {
+        "A": "Azure Cosmos DB",
+        "B": "Azure AI Search",
+        "C": "Azure Monitor",
+        "D": "Azure Synapse"
+      },
+      "correctAnswer": "B",
+      "explanation": "Azure AI Search indexes data and enriches it using AI skillsets such as OCR, entity recognition, and key phrase extraction."
+    },
+    {
+      "id": 130,
+      "domain": "Generative AI",
+      "difficulty": "medium",
+      "question": "What does the temperature parameter control in Azure OpenAI models?",
+      "options": {
+        "A": "Maximum response length",
+        "B": "Response randomness",
+        "C": "Model latency",
+        "D": "Language selection"
+      },
+      "correctAnswer": "B",
+      "explanation": "Temperature controls randomness. Lower values make outputs deterministic while higher values increase creativity."
+    },
+    {
+      "id": 131,
+      "domain": "Natural Language Processing",
+      "difficulty": "hard",
+      "question": "Which Azure service provides enterprise search with AI enrichment capabilities?",
+      "options": {
+        "A": "Azure Cosmos DB",
+        "B": "Azure AI Search",
+        "C": "Azure Monitor",
+        "D": "Azure Synapse"
+      },
+      "correctAnswer": "B",
+      "explanation": "Azure AI Search indexes data and enriches it using AI skillsets such as OCR, entity recognition, and key phrase extraction."
+    },
+    {
+      "id": 132,
+      "domain": "Speech",
+      "difficulty": "easy",
+      "question": "Which Azure service provides prebuilt AI APIs for vision, speech, and language tasks?",
+      "options": {
+        "A": "Azure Cognitive Services",
+        "B": "Azure DevOps",
+        "C": "Azure Kubernetes Service",
+        "D": "Azure Virtual Machines"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Cognitive Services (Azure AI Services) provide prebuilt APIs for vision, speech, language, and decision tasks."
+    },
+    {
+      "id": 133,
+      "domain": "Knowledge Mining",
+      "difficulty": "medium",
+      "question": "Which Azure Speech feature converts spoken audio into text?",
+      "options": {
+        "A": "Text-to-Speech",
+        "B": "Speech-to-Text",
+        "C": "Speech Translation",
+        "D": "Speaker Recognition"
+      },
+      "correctAnswer": "B",
+      "explanation": "Speech-to-Text converts spoken audio into written text."
+    },
+    {
+      "id": 134,
+      "domain": "Generative AI",
+      "difficulty": "hard",
+      "question": "Which Azure feature allows secure authentication to Azure services without storing credentials in code?",
+      "options": {
+        "A": "API Keys",
+        "B": "Managed Identity",
+        "C": "Shared Access Signature",
+        "D": "Storage Keys"
+      },
+      "correctAnswer": "B",
+      "explanation": "Managed Identity allows Azure resources to authenticate without storing credentials in code."
+    },
+    {
+      "id": 135,
+      "domain": "Computer Vision",
+      "difficulty": "hard",
+      "question": "Which Azure feature allows secure authentication to Azure services without storing credentials in code?",
+      "options": {
+        "A": "API Keys",
+        "B": "Managed Identity",
+        "C": "Shared Access Signature",
+        "D": "Storage Keys"
+      },
+      "correctAnswer": "B",
+      "explanation": "Managed Identity allows Azure resources to authenticate without storing credentials in code."
+    },
+    {
+      "id": 136,
+      "domain": "Document Intelligence",
+      "difficulty": "medium",
+      "question": "What does the temperature parameter control in Azure OpenAI models?",
+      "options": {
+        "A": "Maximum response length",
+        "B": "Response randomness",
+        "C": "Model latency",
+        "D": "Language selection"
+      },
+      "correctAnswer": "B",
+      "explanation": "Temperature controls randomness. Lower values make outputs deterministic while higher values increase creativity."
+    },
+    {
+      "id": 137,
+      "domain": "Knowledge Mining",
+      "difficulty": "hard",
+      "question": "Which Azure service extracts structured information from documents such as invoices and receipts?",
+      "options": {
+        "A": "Azure Document Intelligence",
+        "B": "Azure AI Vision",
+        "C": "Azure Translator",
+        "D": "Azure Bot Service"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Document Intelligence extracts structured fields, tables, and key-value pairs from documents."
+    },
+    {
+      "id": 138,
+      "domain": "Generative AI",
+      "difficulty": "medium",
+      "question": "Which Azure AI Language feature identifies positive, negative, or neutral sentiment in text?",
+      "options": {
+        "A": "Sentiment Analysis",
+        "B": "Named Entity Recognition",
+        "C": "Language Detection",
+        "D": "Key Phrase Extraction"
+      },
+      "correctAnswer": "A",
+      "explanation": "Sentiment Analysis determines whether text sentiment is positive, neutral, or negative."
+    },
+    {
+      "id": 139,
+      "domain": "Speech",
+      "difficulty": "easy",
+      "question": "Which Azure service provides prebuilt AI APIs for vision, speech, and language tasks?",
+      "options": {
+        "A": "Azure Cognitive Services",
+        "B": "Azure DevOps",
+        "C": "Azure Kubernetes Service",
+        "D": "Azure Virtual Machines"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Cognitive Services (Azure AI Services) provide prebuilt APIs for vision, speech, language, and decision tasks."
+    },
+    {
+      "id": 140,
+      "domain": "Natural Language Processing",
+      "difficulty": "hard",
+      "question": "Which Azure Speech feature converts spoken audio into text?",
+      "options": {
+        "A": "Text-to-Speech",
+        "B": "Speech-to-Text",
+        "C": "Speech Translation",
+        "D": "Speaker Recognition"
+      },
+      "correctAnswer": "B",
+      "explanation": "Speech-to-Text converts spoken audio into written text."
+    },
+    {
+      "id": 141,
+      "domain": "Natural Language Processing",
+      "difficulty": "easy",
+      "question": "Which Azure Speech feature converts spoken audio into text?",
+      "options": {
+        "A": "Text-to-Speech",
+        "B": "Speech-to-Text",
+        "C": "Speech Translation",
+        "D": "Speaker Recognition"
+      },
+      "correctAnswer": "B",
+      "explanation": "Speech-to-Text converts spoken audio into written text."
+    },
+    {
+      "id": 142,
+      "domain": "Generative AI",
+      "difficulty": "easy",
+      "question": "What does the temperature parameter control in Azure OpenAI models?",
+      "options": {
+        "A": "Maximum response length",
+        "B": "Response randomness",
+        "C": "Model latency",
+        "D": "Language selection"
+      },
+      "correctAnswer": "B",
+      "explanation": "Temperature controls randomness. Lower values make outputs deterministic while higher values increase creativity."
+    },
+    {
+      "id": 143,
+      "domain": "Generative AI",
+      "difficulty": "medium",
+      "question": "Which Azure Speech feature converts spoken audio into text?",
+      "options": {
+        "A": "Text-to-Speech",
+        "B": "Speech-to-Text",
+        "C": "Speech Translation",
+        "D": "Speaker Recognition"
+      },
+      "correctAnswer": "B",
+      "explanation": "Speech-to-Text converts spoken audio into written text."
+    },
+    {
+      "id": 144,
+      "domain": "Natural Language Processing",
+      "difficulty": "hard",
+      "question": "Which Azure AI Vision feature extracts printed and handwritten text from images?",
+      "options": {
+        "A": "Face Detection",
+        "B": "Object Detection",
+        "C": "Read API (OCR)",
+        "D": "Image Tagging"
+      },
+      "correctAnswer": "C",
+      "explanation": "The Read API performs OCR to extract text from images and documents."
+    },
+    {
+      "id": 145,
+      "domain": "Document Intelligence",
+      "difficulty": "easy",
+      "question": "Which Azure service extracts structured information from documents such as invoices and receipts?",
+      "options": {
+        "A": "Azure Document Intelligence",
+        "B": "Azure AI Vision",
+        "C": "Azure Translator",
+        "D": "Azure Bot Service"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Document Intelligence extracts structured fields, tables, and key-value pairs from documents."
+    },
+    {
+      "id": 146,
+      "domain": "Computer Vision",
+      "difficulty": "easy",
+      "question": "Which Azure service provides prebuilt AI APIs for vision, speech, and language tasks?",
+      "options": {
+        "A": "Azure Cognitive Services",
+        "B": "Azure DevOps",
+        "C": "Azure Kubernetes Service",
+        "D": "Azure Virtual Machines"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Cognitive Services (Azure AI Services) provide prebuilt APIs for vision, speech, language, and decision tasks."
+    },
+    {
+      "id": 147,
+      "domain": "Speech",
+      "difficulty": "medium",
+      "question": "Which Azure service provides prebuilt AI APIs for vision, speech, and language tasks?",
+      "options": {
+        "A": "Azure Cognitive Services",
+        "B": "Azure DevOps",
+        "C": "Azure Kubernetes Service",
+        "D": "Azure Virtual Machines"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Cognitive Services (Azure AI Services) provide prebuilt APIs for vision, speech, language, and decision tasks."
+    },
+    {
+      "id": 148,
+      "domain": "Document Intelligence",
+      "difficulty": "hard",
+      "question": "Which technique retrieves relevant documents and provides them as context to an LLM?",
+      "options": {
+        "A": "Fine-tuning",
+        "B": "Retrieval Augmented Generation",
+        "C": "Batch inference",
+        "D": "Transfer learning"
+      },
+      "correctAnswer": "B",
+      "explanation": "Retrieval Augmented Generation (RAG) retrieves external knowledge and injects it into prompts."
+    },
+    {
+      "id": 149,
+      "domain": "Computer Vision",
+      "difficulty": "hard",
+      "question": "Which Azure Speech feature converts spoken audio into text?",
+      "options": {
+        "A": "Text-to-Speech",
+        "B": "Speech-to-Text",
+        "C": "Speech Translation",
+        "D": "Speaker Recognition"
+      },
+      "correctAnswer": "B",
+      "explanation": "Speech-to-Text converts spoken audio into written text."
+    },
+    {
+      "id": 150,
+      "domain": "Natural Language Processing",
+      "difficulty": "hard",
+      "question": "Which Azure service provides prebuilt AI APIs for vision, speech, and language tasks?",
+      "options": {
+        "A": "Azure Cognitive Services",
+        "B": "Azure DevOps",
+        "C": "Azure Kubernetes Service",
+        "D": "Azure Virtual Machines"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Cognitive Services (Azure AI Services) provide prebuilt APIs for vision, speech, language, and decision tasks."
+    },
+    {
+      "id": 151,
+      "domain": "Knowledge Mining",
+      "difficulty": "easy",
+      "question": "Which Azure service provides prebuilt AI APIs for vision, speech, and language tasks?",
+      "options": {
+        "A": "Azure Cognitive Services",
+        "B": "Azure DevOps",
+        "C": "Azure Kubernetes Service",
+        "D": "Azure Virtual Machines"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Cognitive Services (Azure AI Services) provide prebuilt APIs for vision, speech, language, and decision tasks."
+    },
+    {
+      "id": 152,
+      "domain": "Knowledge Mining",
+      "difficulty": "medium",
+      "question": "Which Azure service provides enterprise search with AI enrichment capabilities?",
+      "options": {
+        "A": "Azure Cosmos DB",
+        "B": "Azure AI Search",
+        "C": "Azure Monitor",
+        "D": "Azure Synapse"
+      },
+      "correctAnswer": "B",
+      "explanation": "Azure AI Search indexes data and enriches it using AI skillsets such as OCR, entity recognition, and key phrase extraction."
+    },
+    {
+      "id": 153,
+      "domain": "Plan and Manage Azure AI",
+      "difficulty": "easy",
+      "question": "What is the main purpose of embeddings in Azure OpenAI?",
+      "options": {
+        "A": "Generate images",
+        "B": "Convert text into vector representations",
+        "C": "Translate languages",
+        "D": "Detect sentiment"
+      },
+      "correctAnswer": "B",
+      "explanation": "Embeddings convert text into numerical vector representations for similarity search and semantic retrieval."
+    },
+    {
+      "id": 154,
+      "domain": "Plan and Manage Azure AI",
+      "difficulty": "hard",
+      "question": "What does the temperature parameter control in Azure OpenAI models?",
+      "options": {
+        "A": "Maximum response length",
+        "B": "Response randomness",
+        "C": "Model latency",
+        "D": "Language selection"
+      },
+      "correctAnswer": "B",
+      "explanation": "Temperature controls randomness. Lower values make outputs deterministic while higher values increase creativity."
+    },
+    {
+      "id": 155,
+      "domain": "Speech",
+      "difficulty": "easy",
+      "question": "Which Azure AI Language feature identifies positive, negative, or neutral sentiment in text?",
+      "options": {
+        "A": "Sentiment Analysis",
+        "B": "Named Entity Recognition",
+        "C": "Language Detection",
+        "D": "Key Phrase Extraction"
+      },
+      "correctAnswer": "A",
+      "explanation": "Sentiment Analysis determines whether text sentiment is positive, neutral, or negative."
+    },
+    {
+      "id": 156,
+      "domain": "Computer Vision",
+      "difficulty": "medium",
+      "question": "Which Azure AI Language feature identifies positive, negative, or neutral sentiment in text?",
+      "options": {
+        "A": "Sentiment Analysis",
+        "B": "Named Entity Recognition",
+        "C": "Language Detection",
+        "D": "Key Phrase Extraction"
+      },
+      "correctAnswer": "A",
+      "explanation": "Sentiment Analysis determines whether text sentiment is positive, neutral, or negative."
+    },
+    {
+      "id": 157,
+      "domain": "Speech",
+      "difficulty": "medium",
+      "question": "Which Azure Speech feature converts spoken audio into text?",
+      "options": {
+        "A": "Text-to-Speech",
+        "B": "Speech-to-Text",
+        "C": "Speech Translation",
+        "D": "Speaker Recognition"
+      },
+      "correctAnswer": "B",
+      "explanation": "Speech-to-Text converts spoken audio into written text."
+    },
+    {
+      "id": 158,
+      "domain": "Plan and Manage Azure AI",
+      "difficulty": "easy",
+      "question": "Which Azure AI Vision feature extracts printed and handwritten text from images?",
+      "options": {
+        "A": "Face Detection",
+        "B": "Object Detection",
+        "C": "Read API (OCR)",
+        "D": "Image Tagging"
+      },
+      "correctAnswer": "C",
+      "explanation": "The Read API performs OCR to extract text from images and documents."
+    },
+    {
+      "id": 159,
+      "domain": "Plan and Manage Azure AI",
+      "difficulty": "easy",
+      "question": "Which Azure service extracts structured information from documents such as invoices and receipts?",
+      "options": {
+        "A": "Azure Document Intelligence",
+        "B": "Azure AI Vision",
+        "C": "Azure Translator",
+        "D": "Azure Bot Service"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Document Intelligence extracts structured fields, tables, and key-value pairs from documents."
+    },
+    {
+      "id": 160,
+      "domain": "Generative AI",
+      "difficulty": "easy",
+      "question": "Which Azure service extracts structured information from documents such as invoices and receipts?",
+      "options": {
+        "A": "Azure Document Intelligence",
+        "B": "Azure AI Vision",
+        "C": "Azure Translator",
+        "D": "Azure Bot Service"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Document Intelligence extracts structured fields, tables, and key-value pairs from documents."
+    },
+    {
+      "id": 161,
+      "domain": "Generative AI",
+      "difficulty": "hard",
+      "question": "Which Azure Speech feature converts spoken audio into text?",
+      "options": {
+        "A": "Text-to-Speech",
+        "B": "Speech-to-Text",
+        "C": "Speech Translation",
+        "D": "Speaker Recognition"
+      },
+      "correctAnswer": "B",
+      "explanation": "Speech-to-Text converts spoken audio into written text."
+    },
+    {
+      "id": 162,
+      "domain": "Natural Language Processing",
+      "difficulty": "hard",
+      "question": "Which Azure feature allows secure authentication to Azure services without storing credentials in code?",
+      "options": {
+        "A": "API Keys",
+        "B": "Managed Identity",
+        "C": "Shared Access Signature",
+        "D": "Storage Keys"
+      },
+      "correctAnswer": "B",
+      "explanation": "Managed Identity allows Azure resources to authenticate without storing credentials in code."
+    },
+    {
+      "id": 163,
+      "domain": "Plan and Manage Azure AI",
+      "difficulty": "hard",
+      "question": "Which Azure feature allows secure authentication to Azure services without storing credentials in code?",
+      "options": {
+        "A": "API Keys",
+        "B": "Managed Identity",
+        "C": "Shared Access Signature",
+        "D": "Storage Keys"
+      },
+      "correctAnswer": "B",
+      "explanation": "Managed Identity allows Azure resources to authenticate without storing credentials in code."
+    },
+    {
+      "id": 164,
+      "domain": "Knowledge Mining",
+      "difficulty": "hard",
+      "question": "What is the main purpose of embeddings in Azure OpenAI?",
+      "options": {
+        "A": "Generate images",
+        "B": "Convert text into vector representations",
+        "C": "Translate languages",
+        "D": "Detect sentiment"
+      },
+      "correctAnswer": "B",
+      "explanation": "Embeddings convert text into numerical vector representations for similarity search and semantic retrieval."
+    },
+    {
+      "id": 165,
+      "domain": "Document Intelligence",
+      "difficulty": "easy",
+      "question": "Which Azure service provides enterprise search with AI enrichment capabilities?",
+      "options": {
+        "A": "Azure Cosmos DB",
+        "B": "Azure AI Search",
+        "C": "Azure Monitor",
+        "D": "Azure Synapse"
+      },
+      "correctAnswer": "B",
+      "explanation": "Azure AI Search indexes data and enriches it using AI skillsets such as OCR, entity recognition, and key phrase extraction."
+    },
+    {
+      "id": 166,
+      "domain": "Natural Language Processing",
+      "difficulty": "easy",
+      "question": "Which Azure feature allows secure authentication to Azure services without storing credentials in code?",
+      "options": {
+        "A": "API Keys",
+        "B": "Managed Identity",
+        "C": "Shared Access Signature",
+        "D": "Storage Keys"
+      },
+      "correctAnswer": "B",
+      "explanation": "Managed Identity allows Azure resources to authenticate without storing credentials in code."
+    },
+    {
+      "id": 167,
+      "domain": "Computer Vision",
+      "difficulty": "easy",
+      "question": "What does the temperature parameter control in Azure OpenAI models?",
+      "options": {
+        "A": "Maximum response length",
+        "B": "Response randomness",
+        "C": "Model latency",
+        "D": "Language selection"
+      },
+      "correctAnswer": "B",
+      "explanation": "Temperature controls randomness. Lower values make outputs deterministic while higher values increase creativity."
+    },
+    {
+      "id": 168,
+      "domain": "Generative AI",
+      "difficulty": "hard",
+      "question": "Which Azure Speech feature converts spoken audio into text?",
+      "options": {
+        "A": "Text-to-Speech",
+        "B": "Speech-to-Text",
+        "C": "Speech Translation",
+        "D": "Speaker Recognition"
+      },
+      "correctAnswer": "B",
+      "explanation": "Speech-to-Text converts spoken audio into written text."
+    },
+    {
+      "id": 169,
+      "domain": "Plan and Manage Azure AI",
+      "difficulty": "hard",
+      "question": "Which Azure AI Language feature identifies positive, negative, or neutral sentiment in text?",
+      "options": {
+        "A": "Sentiment Analysis",
+        "B": "Named Entity Recognition",
+        "C": "Language Detection",
+        "D": "Key Phrase Extraction"
+      },
+      "correctAnswer": "A",
+      "explanation": "Sentiment Analysis determines whether text sentiment is positive, neutral, or negative."
+    },
+    {
+      "id": 170,
+      "domain": "Knowledge Mining",
+      "difficulty": "hard",
+      "question": "Which Azure AI Vision feature extracts printed and handwritten text from images?",
+      "options": {
+        "A": "Face Detection",
+        "B": "Object Detection",
+        "C": "Read API (OCR)",
+        "D": "Image Tagging"
+      },
+      "correctAnswer": "C",
+      "explanation": "The Read API performs OCR to extract text from images and documents."
+    },
+    {
+      "id": 171,
+      "domain": "Document Intelligence",
+      "difficulty": "easy",
+      "question": "Which Azure AI Language feature identifies positive, negative, or neutral sentiment in text?",
+      "options": {
+        "A": "Sentiment Analysis",
+        "B": "Named Entity Recognition",
+        "C": "Language Detection",
+        "D": "Key Phrase Extraction"
+      },
+      "correctAnswer": "A",
+      "explanation": "Sentiment Analysis determines whether text sentiment is positive, neutral, or negative."
+    },
+    {
+      "id": 172,
+      "domain": "Natural Language Processing",
+      "difficulty": "hard",
+      "question": "Which Azure AI Vision feature extracts printed and handwritten text from images?",
+      "options": {
+        "A": "Face Detection",
+        "B": "Object Detection",
+        "C": "Read API (OCR)",
+        "D": "Image Tagging"
+      },
+      "correctAnswer": "C",
+      "explanation": "The Read API performs OCR to extract text from images and documents."
+    },
+    {
+      "id": 173,
+      "domain": "Generative AI",
+      "difficulty": "easy",
+      "question": "Which Azure AI Language feature identifies positive, negative, or neutral sentiment in text?",
+      "options": {
+        "A": "Sentiment Analysis",
+        "B": "Named Entity Recognition",
+        "C": "Language Detection",
+        "D": "Key Phrase Extraction"
+      },
+      "correctAnswer": "A",
+      "explanation": "Sentiment Analysis determines whether text sentiment is positive, neutral, or negative."
+    },
+    {
+      "id": 174,
+      "domain": "Natural Language Processing",
+      "difficulty": "hard",
+      "question": "What is the main purpose of embeddings in Azure OpenAI?",
+      "options": {
+        "A": "Generate images",
+        "B": "Convert text into vector representations",
+        "C": "Translate languages",
+        "D": "Detect sentiment"
+      },
+      "correctAnswer": "B",
+      "explanation": "Embeddings convert text into numerical vector representations for similarity search and semantic retrieval."
+    },
+    {
+      "id": 175,
+      "domain": "Generative AI",
+      "difficulty": "hard",
+      "question": "Which technique retrieves relevant documents and provides them as context to an LLM?",
+      "options": {
+        "A": "Fine-tuning",
+        "B": "Retrieval Augmented Generation",
+        "C": "Batch inference",
+        "D": "Transfer learning"
+      },
+      "correctAnswer": "B",
+      "explanation": "Retrieval Augmented Generation (RAG) retrieves external knowledge and injects it into prompts."
+    },
+    {
+      "id": 176,
+      "domain": "Computer Vision",
+      "difficulty": "easy",
+      "question": "Which Azure service provides prebuilt AI APIs for vision, speech, and language tasks?",
+      "options": {
+        "A": "Azure Cognitive Services",
+        "B": "Azure DevOps",
+        "C": "Azure Kubernetes Service",
+        "D": "Azure Virtual Machines"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Cognitive Services (Azure AI Services) provide prebuilt APIs for vision, speech, language, and decision tasks."
+    },
+    {
+      "id": 177,
+      "domain": "Generative AI",
+      "difficulty": "easy",
+      "question": "Which Azure feature allows secure authentication to Azure services without storing credentials in code?",
+      "options": {
+        "A": "API Keys",
+        "B": "Managed Identity",
+        "C": "Shared Access Signature",
+        "D": "Storage Keys"
+      },
+      "correctAnswer": "B",
+      "explanation": "Managed Identity allows Azure resources to authenticate without storing credentials in code."
+    },
+    {
+      "id": 178,
+      "domain": "Document Intelligence",
+      "difficulty": "easy",
+      "question": "What does the temperature parameter control in Azure OpenAI models?",
+      "options": {
+        "A": "Maximum response length",
+        "B": "Response randomness",
+        "C": "Model latency",
+        "D": "Language selection"
+      },
+      "correctAnswer": "B",
+      "explanation": "Temperature controls randomness. Lower values make outputs deterministic while higher values increase creativity."
+    },
+    {
+      "id": 179,
+      "domain": "Generative AI",
+      "difficulty": "easy",
+      "question": "What does the temperature parameter control in Azure OpenAI models?",
+      "options": {
+        "A": "Maximum response length",
+        "B": "Response randomness",
+        "C": "Model latency",
+        "D": "Language selection"
+      },
+      "correctAnswer": "B",
+      "explanation": "Temperature controls randomness. Lower values make outputs deterministic while higher values increase creativity."
+    },
+    {
+      "id": 180,
+      "domain": "Knowledge Mining",
+      "difficulty": "medium",
+      "question": "Which technique retrieves relevant documents and provides them as context to an LLM?",
+      "options": {
+        "A": "Fine-tuning",
+        "B": "Retrieval Augmented Generation",
+        "C": "Batch inference",
+        "D": "Transfer learning"
+      },
+      "correctAnswer": "B",
+      "explanation": "Retrieval Augmented Generation (RAG) retrieves external knowledge and injects it into prompts."
+    },
+    {
+      "id": 181,
+      "domain": "Computer Vision",
+      "difficulty": "hard",
+      "question": "Which Azure AI Vision feature extracts printed and handwritten text from images?",
+      "options": {
+        "A": "Face Detection",
+        "B": "Object Detection",
+        "C": "Read API (OCR)",
+        "D": "Image Tagging"
+      },
+      "correctAnswer": "C",
+      "explanation": "The Read API performs OCR to extract text from images and documents."
+    },
+    {
+      "id": 182,
+      "domain": "Document Intelligence",
+      "difficulty": "hard",
+      "question": "Which Azure service provides enterprise search with AI enrichment capabilities?",
+      "options": {
+        "A": "Azure Cosmos DB",
+        "B": "Azure AI Search",
+        "C": "Azure Monitor",
+        "D": "Azure Synapse"
+      },
+      "correctAnswer": "B",
+      "explanation": "Azure AI Search indexes data and enriches it using AI skillsets such as OCR, entity recognition, and key phrase extraction."
+    },
+    {
+      "id": 183,
+      "domain": "Plan and Manage Azure AI",
+      "difficulty": "easy",
+      "question": "Which Azure service provides prebuilt AI APIs for vision, speech, and language tasks?",
+      "options": {
+        "A": "Azure Cognitive Services",
+        "B": "Azure DevOps",
+        "C": "Azure Kubernetes Service",
+        "D": "Azure Virtual Machines"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Cognitive Services (Azure AI Services) provide prebuilt APIs for vision, speech, language, and decision tasks."
+    },
+    {
+      "id": 184,
+      "domain": "Natural Language Processing",
+      "difficulty": "hard",
+      "question": "Which Azure Speech feature converts spoken audio into text?",
+      "options": {
+        "A": "Text-to-Speech",
+        "B": "Speech-to-Text",
+        "C": "Speech Translation",
+        "D": "Speaker Recognition"
+      },
+      "correctAnswer": "B",
+      "explanation": "Speech-to-Text converts spoken audio into written text."
+    },
+    {
+      "id": 185,
+      "domain": "Speech",
+      "difficulty": "hard",
+      "question": "Which Azure service provides enterprise search with AI enrichment capabilities?",
+      "options": {
+        "A": "Azure Cosmos DB",
+        "B": "Azure AI Search",
+        "C": "Azure Monitor",
+        "D": "Azure Synapse"
+      },
+      "correctAnswer": "B",
+      "explanation": "Azure AI Search indexes data and enriches it using AI skillsets such as OCR, entity recognition, and key phrase extraction."
+    },
+    {
+      "id": 186,
+      "domain": "Generative AI",
+      "difficulty": "hard",
+      "question": "Which technique retrieves relevant documents and provides them as context to an LLM?",
+      "options": {
+        "A": "Fine-tuning",
+        "B": "Retrieval Augmented Generation",
+        "C": "Batch inference",
+        "D": "Transfer learning"
+      },
+      "correctAnswer": "B",
+      "explanation": "Retrieval Augmented Generation (RAG) retrieves external knowledge and injects it into prompts."
+    },
+    {
+      "id": 187,
+      "domain": "Computer Vision",
+      "difficulty": "hard",
+      "question": "Which Azure feature allows secure authentication to Azure services without storing credentials in code?",
+      "options": {
+        "A": "API Keys",
+        "B": "Managed Identity",
+        "C": "Shared Access Signature",
+        "D": "Storage Keys"
+      },
+      "correctAnswer": "B",
+      "explanation": "Managed Identity allows Azure resources to authenticate without storing credentials in code."
+    },
+    {
+      "id": 188,
+      "domain": "Document Intelligence",
+      "difficulty": "hard",
+      "question": "Which Azure AI Language feature identifies positive, negative, or neutral sentiment in text?",
+      "options": {
+        "A": "Sentiment Analysis",
+        "B": "Named Entity Recognition",
+        "C": "Language Detection",
+        "D": "Key Phrase Extraction"
+      },
+      "correctAnswer": "A",
+      "explanation": "Sentiment Analysis determines whether text sentiment is positive, neutral, or negative."
+    },
+    {
+      "id": 189,
+      "domain": "Speech",
+      "difficulty": "easy",
+      "question": "Which Azure Speech feature converts spoken audio into text?",
+      "options": {
+        "A": "Text-to-Speech",
+        "B": "Speech-to-Text",
+        "C": "Speech Translation",
+        "D": "Speaker Recognition"
+      },
+      "correctAnswer": "B",
+      "explanation": "Speech-to-Text converts spoken audio into written text."
+    },
+    {
+      "id": 190,
+      "domain": "Knowledge Mining",
+      "difficulty": "hard",
+      "question": "Which Azure service extracts structured information from documents such as invoices and receipts?",
+      "options": {
+        "A": "Azure Document Intelligence",
+        "B": "Azure AI Vision",
+        "C": "Azure Translator",
+        "D": "Azure Bot Service"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Document Intelligence extracts structured fields, tables, and key-value pairs from documents."
+    },
+    {
+      "id": 191,
+      "domain": "Computer Vision",
+      "difficulty": "medium",
+      "question": "Which Azure AI Vision feature extracts printed and handwritten text from images?",
+      "options": {
+        "A": "Face Detection",
+        "B": "Object Detection",
+        "C": "Read API (OCR)",
+        "D": "Image Tagging"
+      },
+      "correctAnswer": "C",
+      "explanation": "The Read API performs OCR to extract text from images and documents."
+    },
+    {
+      "id": 192,
+      "domain": "Speech",
+      "difficulty": "medium",
+      "question": "What does the temperature parameter control in Azure OpenAI models?",
+      "options": {
+        "A": "Maximum response length",
+        "B": "Response randomness",
+        "C": "Model latency",
+        "D": "Language selection"
+      },
+      "correctAnswer": "B",
+      "explanation": "Temperature controls randomness. Lower values make outputs deterministic while higher values increase creativity."
+    },
+    {
+      "id": 193,
+      "domain": "Plan and Manage Azure AI",
+      "difficulty": "medium",
+      "question": "Which technique retrieves relevant documents and provides them as context to an LLM?",
+      "options": {
+        "A": "Fine-tuning",
+        "B": "Retrieval Augmented Generation",
+        "C": "Batch inference",
+        "D": "Transfer learning"
+      },
+      "correctAnswer": "B",
+      "explanation": "Retrieval Augmented Generation (RAG) retrieves external knowledge and injects it into prompts."
+    },
+    {
+      "id": 194,
+      "domain": "Speech",
+      "difficulty": "medium",
+      "question": "Which technique retrieves relevant documents and provides them as context to an LLM?",
+      "options": {
+        "A": "Fine-tuning",
+        "B": "Retrieval Augmented Generation",
+        "C": "Batch inference",
+        "D": "Transfer learning"
+      },
+      "correctAnswer": "B",
+      "explanation": "Retrieval Augmented Generation (RAG) retrieves external knowledge and injects it into prompts."
+    },
+    {
+      "id": 195,
+      "domain": "Document Intelligence",
+      "difficulty": "easy",
+      "question": "Which technique retrieves relevant documents and provides them as context to an LLM?",
+      "options": {
+        "A": "Fine-tuning",
+        "B": "Retrieval Augmented Generation",
+        "C": "Batch inference",
+        "D": "Transfer learning"
+      },
+      "correctAnswer": "B",
+      "explanation": "Retrieval Augmented Generation (RAG) retrieves external knowledge and injects it into prompts."
+    },
+    {
+      "id": 196,
+      "domain": "Plan and Manage Azure AI",
+      "difficulty": "medium",
+      "question": "Which Azure AI Language feature identifies positive, negative, or neutral sentiment in text?",
+      "options": {
+        "A": "Sentiment Analysis",
+        "B": "Named Entity Recognition",
+        "C": "Language Detection",
+        "D": "Key Phrase Extraction"
+      },
+      "correctAnswer": "A",
+      "explanation": "Sentiment Analysis determines whether text sentiment is positive, neutral, or negative."
+    },
+    {
+      "id": 197,
+      "domain": "Computer Vision",
+      "difficulty": "easy",
+      "question": "Which Azure service extracts structured information from documents such as invoices and receipts?",
+      "options": {
+        "A": "Azure Document Intelligence",
+        "B": "Azure AI Vision",
+        "C": "Azure Translator",
+        "D": "Azure Bot Service"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Document Intelligence extracts structured fields, tables, and key-value pairs from documents."
+    },
+    {
+      "id": 198,
+      "domain": "Knowledge Mining",
+      "difficulty": "medium",
+      "question": "What is the main purpose of embeddings in Azure OpenAI?",
+      "options": {
+        "A": "Generate images",
+        "B": "Convert text into vector representations",
+        "C": "Translate languages",
+        "D": "Detect sentiment"
+      },
+      "correctAnswer": "B",
+      "explanation": "Embeddings convert text into numerical vector representations for similarity search and semantic retrieval."
+    },
+    {
+      "id": 199,
+      "domain": "Generative AI",
+      "difficulty": "hard",
+      "question": "Which Azure service provides prebuilt AI APIs for vision, speech, and language tasks?",
+      "options": {
+        "A": "Azure Cognitive Services",
+        "B": "Azure DevOps",
+        "C": "Azure Kubernetes Service",
+        "D": "Azure Virtual Machines"
+      },
+      "correctAnswer": "A",
+      "explanation": "Azure Cognitive Services (Azure AI Services) provide prebuilt APIs for vision, speech, language, and decision tasks."
+    },
+    {
+      "id": 200,
+      "domain": "Document Intelligence",
+      "difficulty": "easy",
+      "question": "Which Azure service provides enterprise search with AI enrichment capabilities?",
+      "options": {
+        "A": "Azure Cosmos DB",
+        "B": "Azure AI Search",
+        "C": "Azure Monitor",
+        "D": "Azure Synapse"
+      },
+      "correctAnswer": "B",
+      "explanation": "Azure AI Search indexes data and enriches it using AI skillsets such as OCR, entity recognition, and key phrase extraction."
+    }
+  ]
+}

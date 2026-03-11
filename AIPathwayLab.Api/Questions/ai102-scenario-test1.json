@@ -1,0 +1,237 @@
+{
+  "id": "ai102-scenario-test1",
+  "title": "AI-102 Scenario Test 1",
+  "description": "Scenario-based questions testing real-world Azure AI service selection and architecture decisions.",
+  "parts": [
+    {
+      "part": 1,
+      "title": "Part 1 — Service Selection",
+      "questions": [
+        {
+          "id": 1,
+          "scenario": "Fabrikam Ridge Outfitters is building a returns-inspection app that captures customer product photos and must automatically detect visible damage and generate a few simple tags for routing. Photos may include incidental PII in the background, and the solution must use private networking while keeping per-image latency under 500 ms. The team has no labeled data and needs a fully managed service that can be governed and monitored through Azure AI Foundry.",
+          "requirements": [
+            "Prebuilt image analysis (no custom training)",
+            "Private endpoint support for data boundary control",
+            "Centralized monitoring and auditability"
+          ],
+          "question": "Which service should you select?",
+          "options": {
+            "A": "Azure AI Video Indexer",
+            "B": "Azure AI Document Intelligence custom model",
+            "C": "Azure AI Vision",
+            "D": "Azure OpenAI with vision model"
+          },
+          "correctAnswer": "C",
+          "explanation": "Azure AI Vision is a fully managed service that provides prebuilt image analysis capabilities, including object detection, image classification, and image tagging. It supports private endpoints for data boundary control and can meet the requirement of detecting visible damage and generating tags for routing while keeping per-image latency under 500 ms. It also fits centralized monitoring and auditability through Azure AI Foundry.",
+          "overallExplanation": "At Azure AI Engineer level, the aim is to match the workload to the most direct managed capability that satisfies the constraints without adding unnecessary training or operational complexity. The key signal is that this is still-image analysis with prebuilt detection/tagging needs, strict private networking, and low-latency requirements. Azure AI Vision is purpose-built for computer vision on images and supports prebuilt analysis patterns that don't require curated training data.",
+          "optionExplanations": {
+            "A": "Azure AI Video Indexer is optimized for extracting insights from video (time-coded shots, spoken content, etc.), which adds unnecessary processing when you only need per-image tagging and damage detection. The scenario emphasizes sub-500 ms per item, and video-oriented pipelines are a mismatch for that decision signal.",
+            "B": "Azure AI Document Intelligence custom model focuses on extracting structured information from documents (forms, invoices, receipts) and typically implies a document-centric labeling/training effort. The scenario explicitly states the team lacks labeled data and does not want custom training.",
+            "C": "Correct — Azure AI Vision provides prebuilt image analysis, supports private endpoints, and integrates with Azure AI Foundry for governance.",
+            "D": "Azure OpenAI with vision model could produce descriptive text, but it is not the most direct fit for deterministic damage detection/tagging under tight latency and governance constraints."
+          }
+        },
+        {
+          "id": 2,
+          "scenario": "Contoso Financial Services needs to process thousands of loan application forms per day. Each form contains structured fields like applicant name, income, and employment status, plus handwritten signatures and dates. The legal team requires that extracted data be auditable and traceable to specific form regions. The solution must work without retraining on Contoso's specific form layout.",
+          "requirements": [
+            "Extract structured key-value pairs from forms",
+            "Support handwritten content extraction",
+            "Bounding box traceability for each extracted field",
+            "No custom model training required"
+          ],
+          "question": "Which Azure AI service best fits this scenario?",
+          "options": {
+            "A": "Azure AI Vision OCR (Read API)",
+            "B": "Azure AI Document Intelligence prebuilt invoice model",
+            "C": "Azure AI Document Intelligence prebuilt general document model",
+            "D": "Azure AI Language with custom entity extraction"
+          },
+          "correctAnswer": "C",
+          "explanation": "The prebuilt general document model in Azure AI Document Intelligence extracts key-value pairs, tables, and handwritten content with bounding box coordinates — satisfying the auditability and traceability requirement. It handles a wide variety of document types without custom training.",
+          "overallExplanation": "Document Intelligence is the right service family here because the need is structured extraction from forms. The general document model handles arbitrary form layouts without labeling. The bounding box metadata satisfies the legal traceability requirement directly.",
+          "optionExplanations": {
+            "A": "The Read API extracts raw text lines and words but does not understand field semantics or key-value structure. It can't associate 'Applicant Name' as a key with the written value.",
+            "B": "The invoice model is trained specifically for invoice layouts (vendor, amount, tax). Loan applications have completely different field structures, making this model a poor semantic fit.",
+            "C": "Correct — the general document model extracts key-value pairs, handles handwriting, and returns bounding boxes for each field — meeting all four requirements.",
+            "D": "Azure AI Language custom entity extraction requires labeled training data, which the scenario explicitly prohibits. It also works on raw text, not form images."
+          }
+        },
+        {
+          "id": 3,
+          "scenario": "Tailwind Traders operates a global e-commerce platform with product reviews in 40 languages. The team wants to display a sentiment score for each review, extract key phrases like 'fast delivery' or 'poor packaging', and flag reviews that mention competitor brand names. The solution must be serverless, require no custom training, and scale to 2 million reviews per day.",
+          "requirements": [
+            "Multilingual sentiment analysis",
+            "Key phrase extraction",
+            "Named entity recognition for brand names",
+            "No model training",
+            "Serverless, pay-per-use"
+          ],
+          "question": "Which service architecture meets all requirements?",
+          "options": {
+            "A": "Azure AI Language service with prebuilt features",
+            "B": "Azure AI Language custom text classification",
+            "C": "Azure OpenAI with GPT-4o and structured prompts",
+            "D": "Azure AI Search with semantic ranking"
+          },
+          "correctAnswer": "A",
+          "explanation": "Azure AI Language provides prebuilt Sentiment Analysis, Key Phrase Extraction, and Named Entity Recognition (NER) as REST API features. All three capabilities run without any custom training, support 40+ languages, and scale serverlessly on a pay-per-call basis — matching all five requirements exactly.",
+          "overallExplanation": "When the requirements list multiple NLP sub-tasks (sentiment, key phrases, NER) with no custom training and high scale, the prebuilt features in Azure AI Language are the direct answer. Each feature is exposed as a separate API call or batched together. GPT-4o could do all of this but costs significantly more per call and requires prompt engineering for consistent structured output at scale.",
+          "optionExplanations": {
+            "A": "Correct — Sentiment Analysis + Key Phrase Extraction + NER are all prebuilt, multilingual, serverless features in Azure AI Language.",
+            "B": "Custom text classification requires labeled training data and is designed for categorising documents into your own defined classes, not for extraction tasks.",
+            "C": "GPT-4o can perform all these tasks via prompting but is 10-50x more expensive per call than Language service APIs. For 2M reviews/day, this would be prohibitively costly and latency unpredictable.",
+            "D": "Azure AI Search adds indexing and query capabilities on top of content. Semantic ranking helps with search relevance but does not extract sentiment, key phrases, or entities from raw review text."
+          }
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "title": "Part 2 — Architecture & Configuration",
+      "questions": [
+        {
+          "id": 4,
+          "scenario": "Adventure Works is building a customer support chatbot. The bot must answer questions about products using a curated knowledge base of 500 PDF manuals. The bot should only answer questions that can be answered from the manuals — it must not hallucinate or use general knowledge. Response latency must be under 3 seconds and the solution must be deployable to Azure without custom infrastructure management.",
+          "requirements": [
+            "Answers grounded strictly in provided documents",
+            "No responses outside the knowledge base",
+            "Under 3 second response latency",
+            "Managed Azure deployment"
+          ],
+          "question": "Which architecture pattern best satisfies all requirements?",
+          "options": {
+            "A": "Fine-tune GPT-4o on the PDF content",
+            "B": "RAG (Retrieval-Augmented Generation) using Azure AI Search + Azure OpenAI",
+            "C": "Azure AI Language question answering with custom knowledge base",
+            "D": "Azure Bot Service with hardcoded LUIS intents"
+          },
+          "correctAnswer": "B",
+          "explanation": "RAG with Azure AI Search and Azure OpenAI is purpose-built for this scenario. Documents are indexed in AI Search, a user question retrieves the most relevant chunks, and GPT-4o generates a grounded answer constrained to the retrieved context. System prompt instructions enforce that the model only answers from context, satisfying the no-hallucination requirement.",
+          "overallExplanation": "The key requirements are grounding (no hallucination), scale (500 PDFs), latency (< 3s), and managed deployment. RAG addresses all four directly. Fine-tuning doesn't prevent hallucination — it changes the model's weights but doesn't enforce retrieval-only answers. Azure AI Language QnA is for simple FAQ-style answers, not complex PDF content.",
+          "optionExplanations": {
+            "A": "Fine-tuning encodes knowledge into model weights but cannot guarantee the model won't answer outside the training data. It also requires expensive compute for each document update.",
+            "B": "Correct — RAG retrieves only relevant document chunks at query time and passes them as context. The system prompt instructs the model to answer only from context, directly addressing the grounding requirement.",
+            "C": "Azure AI Language QnA pairs works well for simple FAQ matching but struggles with complex reasoning across 500 PDFs and multi-step questions about technical manuals.",
+            "D": "LUIS-based intents require defining every intent and entity manually. This doesn't scale to 500 manuals of unstructured content and cannot handle the semantic diversity of product questions."
+          }
+        },
+        {
+          "id": 5,
+          "scenario": "Northwind Healthcare processes audio recordings of patient consultations to generate clinical notes. The recordings are in English and Spanish, range from 5 to 45 minutes, and contain medical terminology. The system must operate fully within the EU data residency boundary. Turnaround time for transcription is within 1 hour of recording completion.",
+          "requirements": [
+            "Batch transcription of long-form audio (up to 45 min)",
+            "Medical vocabulary accuracy",
+            "English and Spanish language support",
+            "EU data residency (no data leaves EU)"
+          ],
+          "question": "Which Azure AI Speech configuration satisfies all requirements?",
+          "options": {
+            "A": "Real-time Speech-to-Text with default model",
+            "B": "Batch transcription with a custom speech model deployed in West Europe",
+            "C": "Azure AI Video Indexer with transcription enabled",
+            "D": "Azure OpenAI Whisper model endpoint in East US"
+          },
+          "correctAnswer": "B",
+          "explanation": "Batch transcription handles long audio files asynchronously, which suits the 5-45 minute recordings and 1-hour turnaround requirement. A custom speech model can be trained with medical terminology to improve accuracy. Deploying in West Europe (EU region) ensures data residency compliance. English and Spanish are both supported.",
+          "overallExplanation": "The scenario has three distinct constraints: long audio, specialized vocabulary, and EU data residency. Batch transcription + custom model + EU region deployment is the only option that addresses all three simultaneously.",
+          "optionExplanations": {
+            "A": "Real-time Speech-to-Text is designed for live streaming audio, not batch processing of pre-recorded files. It has connection time limits that make 45-minute files impractical.",
+            "B": "Correct — Batch transcription handles files of any length asynchronously. Custom models improve medical terminology accuracy. West Europe is an EU region satisfying data residency.",
+            "C": "Azure AI Video Indexer includes transcription but is designed for video content analysis (speakers, scenes, objects). It adds unnecessary overhead and cost for audio-only clinical recordings.",
+            "D": "East US is outside the EU. This immediately fails the data residency requirement, regardless of other capabilities."
+          }
+        },
+        {
+          "id": 6,
+          "scenario": "Fourth Coffee Chain is rolling out an AI ordering system. The system must understand customer orders like 'I want a large oat milk latte with an extra shot, no sugar' and extract: drink type, size, milk type, customizations, and modifications. The team has 10,000 historical order transcripts that can be used for training. The solution must integrate with their existing .NET ordering API.",
+          "requirements": [
+            "Entity extraction (drink, size, milk, modifications)",
+            "Custom domain vocabulary (coffee menu terms)",
+            "Training data available (10,000 samples)",
+            ".NET SDK integration"
+          ],
+          "question": "Which Azure AI service should be used to build the intent and entity extraction?",
+          "options": {
+            "A": "Azure AI Language — Conversational Language Understanding (CLU)",
+            "B": "Azure AI Language — prebuilt NER",
+            "C": "Azure OpenAI with function calling",
+            "D": "Azure AI Language — sentiment analysis"
+          },
+          "correctAnswer": "A",
+          "explanation": "Conversational Language Understanding (CLU) is designed for custom intent classification and entity extraction from conversational text. It supports custom entity types (drink, size, milk, modifications), trains on your labeled data (10,000 transcripts available), and has a .NET SDK. It is the direct successor to LUIS.",
+          "overallExplanation": "When the requirement is custom entity extraction from conversational input with domain-specific vocabulary and training data available, CLU is the exact fit. Prebuilt NER only recognizes general entities (persons, locations, dates) — not coffee-specific terms. Function calling with OpenAI works but is more expensive and harder to maintain at scale for a single-purpose ordering task.",
+          "optionExplanations": {
+            "A": "Correct — CLU supports custom intents (order, modify, cancel) and custom entities (drink type, size, milk type) trained on your own data. Full .NET SDK support.",
+            "B": "Prebuilt NER identifies Person, Location, Organization, DateTime etc. It has no awareness of 'oat milk', 'extra shot', or 'venti'. Cannot be customized without switching to a custom model.",
+            "C": "Function calling with GPT-4o could extract the entities via structured output prompting. However, it's significantly more expensive per call and introduces LLM latency for what is fundamentally a structured extraction task.",
+            "D": "Sentiment analysis determines positive/negative/neutral tone. It does not extract entities or classify intents. Completely wrong tool for this task."
+          }
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "title": "Part 3 — Multi-Service Solutions",
+      "questions": [
+        {
+          "id": 7,
+          "scenario": "Silver Pine Retail is adding a user-generated gallery where customers upload product photos that must be auto-tagged for search and accessibility text. The upload pipeline must block sexual and violent imagery, and all decisions must be auditable for governance reviews. The team is constrained to managed services and wants to keep operational overhead low while enforcing responsible AI controls.",
+          "requirements": [
+            "Automatic image tagging and alt-text generation",
+            "Content moderation to block unsafe imagery",
+            "Audit trail for all AI decisions",
+            "Managed services only, no custom model training"
+          ],
+          "question": "Which services should you use to meet the requirements? (Select TWO.)",
+          "options": {
+            "A": "Azure AI Search vector indexing",
+            "B": "Azure AI Vision",
+            "C": "Azure AI Speech batch transcription",
+            "D": "Azure AI Language entity extraction on images",
+            "E": "Azure AI Content Safety"
+          },
+          "correctAnswer": ["B", "E"],
+          "explanation": "Azure AI Vision covers the computer vision requirement for analyzing images and producing tags/captions suitable for search and accessibility workflows. Azure AI Content Safety is the purpose-built control for identifying and filtering unsafe visual content, aligning to the scenario's emphasis on responsible AI and auditability.",
+          "overallExplanation": "At Azure AI Engineer level, the aim is to select the smallest set of services that directly satisfies the scenario's functional needs plus the governance constraints. The key signal is that the pipeline must both understand images (tagging/accessibility) and moderate image content with audit-friendly outcomes.",
+          "optionExplanations": {
+            "A": "Azure AI Search vector indexing helps with retrieval once you already have meaningful labels/embeddings, but it does not perform the vision analysis or safety classification itself.",
+            "B": "Correct — Azure AI Vision provides prebuilt image analysis (tags, captions, dense captions) without custom training, supports private endpoints, and integrates with Azure AI Foundry for governance and audit.",
+            "C": "Azure AI Speech batch transcription targets audio-to-text, which is irrelevant when the input is customer-uploaded photos.",
+            "D": "Azure AI Language entity extraction is designed for text inputs, not image pixels, so it cannot directly analyze uploaded photos.",
+            "E": "Correct — Azure AI Content Safety provides built-in classifiers for sexual and violent content across images and text, with decision logging that satisfies the audit requirement."
+          }
+        },
+        {
+          "id": 8,
+          "scenario": "Woodgrove Bank is building a document processing pipeline for loan applications. Each application arrives as a scanned PDF and must have key fields extracted (name, income, loan amount), the extracted text analyzed for sentiment to flag stressed applicants, and any potentially harmful content in freeform comments detected before storage. The solution must be fully managed and the pipeline orchestrated without custom infrastructure.",
+          "requirements": [
+            "Structured key-value extraction from scanned PDFs",
+            "Sentiment analysis on extracted freeform text",
+            "Harmful content detection in comments",
+            "Managed services, no custom infrastructure"
+          ],
+          "question": "Which THREE Azure AI services form the correct pipeline for this solution?",
+          "options": {
+            "A": "Azure AI Document Intelligence",
+            "B": "Azure AI Language",
+            "C": "Azure AI Content Safety",
+            "D": "Azure AI Video Indexer",
+            "E": "Azure OpenAI fine-tuned model"
+          },
+          "correctAnswer": ["A", "B", "C"],
+          "explanation": "Document Intelligence extracts structured fields from the scanned PDFs. Azure AI Language performs sentiment analysis on the extracted freeform text. Azure AI Content Safety detects harmful content in the comments before storage. All three are fully managed services that can be chained into a pipeline without custom infrastructure.",
+          "overallExplanation": "This is a classic multi-stage document pipeline: ingest → extract → analyze → moderate. Each stage maps to a specific Azure AI service. The discriminator between this and simpler scenarios is that three separate AI capabilities are required — extraction, NLP analysis, and content safety — none of which overlap.",
+          "optionExplanations": {
+            "A": "Correct — Azure AI Document Intelligence prebuilt or custom models extract key-value pairs, tables, and handwritten fields from scanned PDFs with bounding box traceability.",
+            "B": "Correct — Azure AI Language Sentiment Analysis scores freeform text extracted from the application, enabling the bank to flag potentially stressed applicants for human review.",
+            "C": "Correct — Azure AI Content Safety detects harmful or inappropriate content in freeform comments before they are persisted, satisfying the moderation requirement.",
+            "D": "Azure AI Video Indexer is optimized for video content analysis (speakers, scenes, transcription). It has no role in processing scanned PDF documents.",
+            "E": "A fine-tuned OpenAI model could theoretically do all three tasks via prompting, but it is not the most direct fit — it requires prompt engineering for consistent structured output, is significantly more expensive, and does not constitute separate managed services for each stage."
+          }
+        }
+      ]
+    }
+  ]
+}

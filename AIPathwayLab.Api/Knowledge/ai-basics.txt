@@ -1,0 +1,5 @@
+Retrieval Augmented Generation (RAG) is a technique that retrieves relevant documents before generating answers.
+
+Embeddings convert text into vectors so that semantic similarity can be calculated.
+
+Vector search finds documents that are most similar to a user's question.

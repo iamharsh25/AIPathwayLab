@@ -1,0 +1,109 @@
+AZURE AI VISION SERVICE SETUP GUIDE
+=====================================
+
+PURPOSE: Azure AI Vision (formerly Computer Vision) is used in this project for image analysis — generating captions, detecting objects, extracting tags, and reading text (OCR) from images in a single API call.
+
+SDK USED: Azure.AI.Vision.ImageAnalysis v1.0.0 (NuGet package)
+Main class: ImageAnalysisClient
+Main method: AnalyzeAsync(BinaryData imageData, VisualFeatures features, ImageAnalysisOptions options)
+
+STEP 1: CREATE THE AZURE AI VISION RESOURCE
+
+Option A — Computer Vision (vision only, recommended for this project):
+1. Go to portal.azure.com and sign in
+2. Click "Create a resource"
+3. Search for "Computer Vision"
+4. Click "Computer Vision" → "Create"
+5. Fill in the form:
+   - Subscription: your Azure subscription
+   - Resource Group: create new or use existing (e.g. "ai-pathway-rg")
+   - Region: East US (best feature availability, especially for newer caption model)
+   - Name: unique name (e.g. "aipathwaylab-cv")
+   - Pricing Tier: Free F0 for learning, Standard S1 for production
+6. Click "Review + create" → "Create"
+7. Deployment takes ~1 minute
+
+Option B — Azure AI Services (multi-service):
+- Search for "Azure AI services" instead
+- One resource gives you Vision + Language + Speech under one endpoint/key
+- Useful if building multiple AI features
+
+STEP 2: GET YOUR CREDENTIALS
+1. Navigate to your resource once deployed
+2. In the left menu, click "Keys and Endpoint"
+3. Copy "KEY 1" — this is your API key
+4. Copy "Endpoint" — format: https://YOUR-NAME.cognitiveservices.azure.com/
+
+STEP 3: CONFIGURE APPSETTINGS.JSON
+Add these values to AIPathwayLab.Api/appsettings.json:
+
+{
+  "AzureVision": {
+    "Endpoint": "https://YOUR-NAME.cognitiveservices.azure.com/",
+    "ApiKey": "YOUR-KEY-1-HERE"
+  }
+}
+
+How this is used in code:
+- VisionService.cs constructor reads config["AzureVision:Endpoint"] and config["AzureVision:ApiKey"]
+- Creates ImageAnalysisClient(new Uri(endpoint), new AzureKeyCredential(apiKey))
+- VisionService is registered as a singleton in Program.cs
+
+STEP 4: UNDERSTAND THE VISUAL FEATURES
+Each feature maps to a flag in the VisualFeatures enum:
+
+VisualFeatures.Caption   → One natural language sentence describing the image
+VisualFeatures.Tags      → Keyword list with confidence scores (colors, objects, scenes)
+VisualFeatures.Objects   → Detected objects with bounding boxes (X, Y, Width, Height)
+VisualFeatures.Read      → OCR — extracts printed or handwritten text by line
+
+All four features are requested in a single API call — Azure processes them together.
+Setting GenderNeutralCaption = true removes gender-specific pronouns from captions.
+
+PRICING TIERS
+Free F0:
+- 5,000 transactions per month
+- 1 transaction per second maximum
+- Perfect for learning and development
+
+Standard S1:
+- Pricing per 1,000 calls:
+  - Caption: $1.50
+  - Tags: $1.00
+  - Objects: $1.00
+  - Read/OCR: $1.50
+- No monthly call limit
+- Multiple calls per second
+
+SUPPORTED IMAGE FORMATS
+- JPEG, PNG, BMP, WEBP, GIF (first frame only)
+- Minimum size: 50 x 50 pixels
+- Maximum size: 20 MB via API (this project caps at 10 MB in VisionController.cs)
+- Images should have clear content for best results
+
+STEP 5: VERIFY THE CONNECTION
+1. Run dotnet run in the AIPathwayLab.Api directory
+2. Navigate to the Vision Lab tab in the frontend
+3. Upload a test image and click Analyze
+4. If you get a 401 error, check your API key
+5. If you get a connection error, check the endpoint URL
+
+COMMON ERRORS
+- 401 Unauthorized → wrong API key or key has been regenerated
+- ResourceNotFound → wrong endpoint URL format
+- 400 Bad Request / InvalidImageFormat → unsupported file type or corrupt image
+- 429 Too Many Requests → hit the F0 rate limit (1 req/sec), wait 1 second and retry
+- FileTooLarge → image exceeds 20 MB API limit (our app rejects > 10 MB in controller)
+
+REGIONS WITH BEST FEATURE SUPPORT
+- East US (recommended)
+- West Europe
+- Southeast Asia
+- Some newer features like dense captions are only available in certain regions
+
+AI-102 EXAM RELEVANCE
+Azure AI Vision is tested in the AI-102 exam under:
+- "Analyze images" — caption, tags, objects, people, smart crops
+- "Read text" — OCR with the Read API (VisualFeatures.Read)
+- Difference from Document Intelligence: Vision Read is for images/short docs; Document Intelligence is for structured forms, invoices, and long PDFs
+- Know when to use Computer Vision vs Document Intelligence vs Azure AI Search

@@ -1,0 +1,354 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "domain": "Plan and Manage Azure AI",
+      "difficulty": "easy",
+      "question": "Which of the following is NOT one of Microsoft's Responsible AI principles?",
+      "options": {
+        "A": "Fairness",
+        "B": "Transparency",
+        "C": "Profitability",
+        "D": "Accountability"
+      },
+      "correctAnswer": "C",
+      "explanation": "Microsoft's six Responsible AI principles are: Fairness, Reliability & Safety, Privacy & Security, Inclusiveness, Transparency, and Accountability. Profitability is not one of them. These principles guide how AI should be designed and used responsibly."
+    },
+    {
+      "id": 2,
+      "domain": "Plan and Manage Azure AI",
+      "difficulty": "medium",
+      "question": "You need to authenticate an Azure AI service in a production application without storing credentials in code. What is the recommended approach?",
+      "options": {
+        "A": "Hardcode the API key in appsettings.json",
+        "B": "Use a Managed Identity and assign it the Cognitive Services User role",
+        "C": "Pass the API key as a query string parameter",
+        "D": "Store the key in a public GitHub repository"
+      },
+      "correctAnswer": "B",
+      "explanation": "Managed Identity is the recommended approach for production. It eliminates the need to manage credentials — Azure automatically handles the token lifecycle. You assign the identity the 'Cognitive Services User' role in Azure RBAC. This follows the 'zero secrets' principle and is more secure than API keys in config files."
+    },
+    {
+      "id": 3,
+      "domain": "Plan and Manage Azure AI",
+      "difficulty": "medium",
+      "question": "Your company needs to use Azure AI services in a region with strict data sovereignty requirements. The data must not leave that region. What should you configure?",
+      "options": {
+        "A": "Enable geo-redundant storage",
+        "B": "Use a local Azure AI container deployment",
+        "C": "Select a paired region for failover",
+        "D": "Enable diagnostic logging"
+      },
+      "correctAnswer": "B",
+      "explanation": "Azure AI containers allow you to run AI services locally (on-premises or in a specific region). This ensures data never leaves your environment. The container still authenticates with Azure but processes data locally — perfect for data sovereignty, compliance, or offline scenarios."
+    },
+    {
+      "id": 4,
+      "domain": "Plan and Manage Azure AI",
+      "difficulty": "hard",
+      "question": "Which Azure service should you use to monitor Azure AI model performance, detect data drift, and log model inputs and outputs over time?",
+      "options": {
+        "A": "Azure Monitor",
+        "B": "Azure Machine Learning",
+        "C": "Application Insights",
+        "D": "Azure Advisor"
+      },
+      "correctAnswer": "B",
+      "explanation": "Azure Machine Learning provides MLOps capabilities including model monitoring, data drift detection, and input/output logging. While Application Insights and Azure Monitor handle infrastructure/application telemetry, Azure ML is specifically designed for ML model lifecycle management including performance tracking over time."
+    },
+    {
+      "id": 5,
+      "domain": "Computer Vision",
+      "difficulty": "easy",
+      "question": "You need to extract all text from a scanned PDF document that includes both printed and handwritten text. Which Azure AI Vision feature should you use?",
+      "options": {
+        "A": "Image Analysis",
+        "B": "Custom Vision",
+        "C": "Read API (OCR)",
+        "D": "Face API"
+      },
+      "correctAnswer": "C",
+      "explanation": "The Read API (also called OCR) in Azure AI Vision is specifically designed for extracting text from images and PDFs. It handles both printed and handwritten text, supports multi-page documents, and returns structured results with bounding boxes. Image Analysis does basic OCR but is less powerful for dense text documents."
+    },
+    {
+      "id": 6,
+      "domain": "Computer Vision",
+      "difficulty": "medium",
+      "question": "Your retail company wants to detect when a shelf is out of stock by analysing camera images. The standard Azure AI Vision models don't recognise your specific products. What should you use?",
+      "options": {
+        "A": "Azure AI Vision Image Analysis with prebuilt tags",
+        "B": "Azure Custom Vision trained on your product images",
+        "C": "Azure Face API",
+        "D": "Azure Video Indexer"
+      },
+      "correctAnswer": "B",
+      "explanation": "Azure Custom Vision lets you train a custom image classification or object detection model on your own labelled images. Since standard models don't know your specific products, you train Custom Vision with images of your products. It's a no-code/low-code service — you upload labelled images, train, and deploy via a REST API."
+    },
+    {
+      "id": 7,
+      "domain": "Computer Vision",
+      "difficulty": "medium",
+      "question": "Which Azure AI Vision feature would you use to automatically generate a caption describing the content of an image?",
+      "options": {
+        "A": "Read API",
+        "B": "Image Analysis — Dense Captions",
+        "C": "Custom Vision",
+        "D": "Document Intelligence"
+      },
+      "correctAnswer": "B",
+      "explanation": "Image Analysis in Azure AI Vision includes a Dense Captions feature that generates human-readable descriptions of images, including the overall scene and individual objects. This is different from OCR (which reads text) — Dense Captions describes visual content in natural language."
+    },
+    {
+      "id": 8,
+      "domain": "Computer Vision",
+      "difficulty": "hard",
+      "question": "When training a Custom Vision model, you have only 15 images per tag. What approach should you use to improve model accuracy?",
+      "options": {
+        "A": "Increase the training iterations",
+        "B": "Use data augmentation to generate more training samples",
+        "C": "Switch to the free pricing tier",
+        "D": "Use fewer tags"
+      },
+      "correctAnswer": "B",
+      "explanation": "Custom Vision requires at least 15 images per tag as a minimum, but 50+ per tag significantly improves accuracy. Data augmentation — applying transformations like rotation, flipping, brightness changes — artificially increases training data from existing images. Azure Custom Vision applies some augmentation automatically, but you should also manually augment your dataset for best results."
+    },
+    {
+      "id": 9,
+      "domain": "Natural Language Processing",
+      "difficulty": "easy",
+      "question": "Which Azure AI Language feature would you use to identify whether a customer review is positive, negative, or neutral?",
+      "options": {
+        "A": "Named Entity Recognition",
+        "B": "Sentiment Analysis",
+        "C": "Key Phrase Extraction",
+        "D": "Language Detection"
+      },
+      "correctAnswer": "B",
+      "explanation": "Sentiment Analysis in Azure AI Language analyses text and returns a sentiment label (positive, neutral, negative) and a confidence score. It can also do opinion mining — linking sentiments to specific aspects (e.g. 'the food was great but the service was slow'). This is the correct feature for understanding customer feedback tone."
+    },
+    {
+      "id": 10,
+      "domain": "Natural Language Processing",
+      "difficulty": "medium",
+      "question": "You are building a chatbot that needs to understand user intent from messages like 'Book a flight to London for tomorrow'. Which Azure AI service should you use?",
+      "options": {
+        "A": "Azure AI Language — Sentiment Analysis",
+        "B": "Azure AI Language — Conversational Language Understanding (CLU)",
+        "C": "Azure AI Translator",
+        "D": "Azure OpenAI"
+      },
+      "correctAnswer": "B",
+      "explanation": "Conversational Language Understanding (CLU) is designed to extract intent and entities from natural language. For 'Book a flight to London for tomorrow', CLU identifies the intent (BookFlight) and entities (destination: London, date: tomorrow). You train CLU with example utterances per intent. It is the successor to LUIS (Language Understanding Intelligent Service)."
+    },
+    {
+      "id": 11,
+      "domain": "Natural Language Processing",
+      "difficulty": "medium",
+      "question": "Your application needs to answer questions from a company FAQ document without training a custom model. Which Azure AI Language feature is best suited?",
+      "options": {
+        "A": "Custom Text Classification",
+        "B": "Custom Question Answering",
+        "C": "Named Entity Recognition",
+        "D": "Conversational Language Understanding"
+      },
+      "correctAnswer": "B",
+      "explanation": "Custom Question Answering in Azure AI Language lets you create a knowledge base from existing documents (FAQs, manuals, URLs). It extracts question-answer pairs and responds to user queries. No ML training is required — you import documents and it generates the knowledge base. Great for FAQ bots, help desks, and document Q&A scenarios."
+    },
+    {
+      "id": 12,
+      "domain": "Natural Language Processing",
+      "difficulty": "hard",
+      "question": "You need to extract structured information from medical records, identifying patient names, diagnoses, and medications. Which Azure AI Language feature should you use?",
+      "options": {
+        "A": "Key Phrase Extraction",
+        "B": "Healthcare Named Entity Recognition (NER)",
+        "C": "Sentiment Analysis with Opinion Mining",
+        "D": "Custom Named Entity Recognition"
+      },
+      "correctAnswer": "B",
+      "explanation": "Azure AI Language includes a Healthcare domain-specific NER model pre-trained to recognise medical entities such as diagnoses, medications, dosages, symptoms, and anatomical locations. It is part of the Text Analytics for Health feature. For general domains, Custom NER lets you train your own entity extractor — but for healthcare, the prebuilt model is already comprehensive."
+    },
+    {
+      "id": 13,
+      "domain": "Knowledge Mining",
+      "difficulty": "easy",
+      "question": "What is the purpose of an indexer in Azure AI Search?",
+      "options": {
+        "A": "To store search results in a cache",
+        "B": "To automatically pull data from a data source and populate the search index",
+        "C": "To apply security trimming to search results",
+        "D": "To generate embeddings for vector search"
+      },
+      "correctAnswer": "B",
+      "explanation": "An indexer in Azure AI Search is a crawler that automatically connects to a data source (Blob Storage, SQL Database, Cosmos DB, etc.), reads the data, applies any configured skillset, and populates the search index. It can run on a schedule so the index stays current without manual updates."
+    },
+    {
+      "id": 14,
+      "domain": "Knowledge Mining",
+      "difficulty": "medium",
+      "question": "You want Azure AI Search to automatically extract key phrases and detect language from documents as they are indexed. What component enables this?",
+      "options": {
+        "A": "Semantic ranker",
+        "B": "Scoring profile",
+        "C": "AI enrichment skillset",
+        "D": "Synonym map"
+      },
+      "correctAnswer": "C",
+      "explanation": "An AI enrichment skillset is a pipeline of cognitive skills (built-in or custom) applied during indexing. Built-in skills include key phrase extraction, language detection, entity recognition, OCR, and sentiment analysis. The enriched data is stored in the index as searchable fields, making content discoverable even when it was not explicitly structured."
+    },
+    {
+      "id": 15,
+      "domain": "Knowledge Mining",
+      "difficulty": "hard",
+      "question": "Which Azure AI Search feature re-ranks results using deep language understanding to surface the most semantically relevant documents beyond simple keyword matching?",
+      "options": {
+        "A": "Fuzzy search",
+        "B": "Semantic ranker",
+        "C": "BM25 scoring",
+        "D": "Faceted navigation"
+      },
+      "correctAnswer": "B",
+      "explanation": "Semantic ranker in Azure AI Search uses Microsoft's language models to re-rank the top results from BM25 (keyword) search. It understands query intent and document meaning, not just keyword overlap. It also generates semantic captions and highlights. BM25 is the default keyword scorer — effective for exact terms but does not understand meaning."
+    },
+    {
+      "id": 16,
+      "domain": "Document Intelligence",
+      "difficulty": "easy",
+      "question": "You need to extract key-value pairs and tables from thousands of invoices with consistent layouts. Which Azure AI Document Intelligence model type is most appropriate?",
+      "options": {
+        "A": "Read model",
+        "B": "General Document model",
+        "C": "Custom template model",
+        "D": "Business card model"
+      },
+      "correctAnswer": "C",
+      "explanation": "A Custom Template model in Azure AI Document Intelligence is trained on your specific document layout. It learns where fields like InvoiceNumber, Amount, and Date appear in your documents. Since the invoices have a consistent layout, a template model gives the highest accuracy. The Read model only extracts raw text, and the General Document model handles varied layouts with lower precision."
+    },
+    {
+      "id": 17,
+      "domain": "Document Intelligence",
+      "difficulty": "medium",
+      "question": "Which prebuilt model in Azure AI Document Intelligence is specifically designed to extract vendor, invoice number, amount due, and payment terms?",
+      "options": {
+        "A": "Receipt model",
+        "B": "Invoice model",
+        "C": "Layout model",
+        "D": "ID document model"
+      },
+      "correctAnswer": "B",
+      "explanation": "Azure AI Document Intelligence has a prebuilt Invoice model trained specifically for invoice documents. It extracts common invoice fields: vendor name, customer name, invoice ID, invoice date, due date, subtotal, tax, total, and line items. No training is required — just point it at your invoice. The Receipt model is for retail receipts, and the Layout model only extracts text and table structure without field understanding."
+    },
+    {
+      "id": 18,
+      "domain": "Generative AI",
+      "difficulty": "easy",
+      "question": "What is Retrieval Augmented Generation (RAG)?",
+      "options": {
+        "A": "Fine-tuning a language model on your own data",
+        "B": "A technique that retrieves relevant documents and provides them as context to a language model at inference time",
+        "C": "A method to compress large language models",
+        "D": "Training a model from scratch on domain-specific data"
+      },
+      "correctAnswer": "B",
+      "explanation": "RAG (Retrieval Augmented Generation) retrieves relevant documents from a knowledge base using vector search, then injects them into the model prompt as context. The model answers using that context rather than just its training data. This means the knowledge is always current (no retraining needed) and you can cite sources. This is exactly how the AI Tutor in this project works."
+    },
+    {
+      "id": 19,
+      "domain": "Generative AI",
+      "difficulty": "medium",
+      "question": "In a RAG system, vector search returns 10 candidate documents but the top result by similarity score is not always the most relevant. What technique addresses this?",
+      "options": {
+        "A": "Fine-tuning",
+        "B": "Prompt caching",
+        "C": "Reranking",
+        "D": "Chunking"
+      },
+      "correctAnswer": "C",
+      "explanation": "Reranking is applied after initial retrieval to re-score candidates by deeper relevance. Vector search finds approximate nearest neighbours quickly, but similarity score does not always equal the best answer. A reranker scores the query alongside each candidate together — much more accurate but slower. The reranker runs only on the top-N candidates to keep latency low. This project implements RerankerService.cs for exactly this purpose."
+    },
+    {
+      "id": 20,
+      "domain": "Generative AI",
+      "difficulty": "medium",
+      "question": "In Azure OpenAI, what does the 'temperature' parameter control?",
+      "options": {
+        "A": "The maximum number of tokens in the response",
+        "B": "The randomness and creativity of the model output",
+        "C": "The speed of response generation",
+        "D": "The language the model responds in"
+      },
+      "correctAnswer": "B",
+      "explanation": "Temperature controls the randomness of the model's token selection. Temperature 0 makes the model deterministic and consistent — always picks the most probable token. Temperature 1 introduces more randomness and creativity. For factual Q&A or code generation, use low temperature (0–0.3). For creative writing, use higher temperature (0.7–1.0)."
+    },
+    {
+      "id": 21,
+      "domain": "Generative AI",
+      "difficulty": "hard",
+      "question": "You want to give an Azure OpenAI model access to a real-time stock price function during a conversation. The model should decide when to call this function based on the user's question. What Azure OpenAI feature enables this?",
+      "options": {
+        "A": "System prompt injection",
+        "B": "Fine-tuning with function examples",
+        "C": "Function calling (tool use)",
+        "D": "Embeddings API"
+      },
+      "correctAnswer": "C",
+      "explanation": "Function calling (now called tool use) lets you define function schemas in the API request. The model reads user input and decides whether to call a function, returning a structured JSON payload with the function name and arguments. Your code executes the function (e.g. fetch stock price) and passes the result back. The model then uses the live data in its response. This is how AI agents with real-world capabilities work."
+    },
+    {
+      "id": 22,
+      "domain": "Generative AI",
+      "difficulty": "hard",
+      "question": "What is the key difference between fine-tuning an Azure OpenAI model and using RAG?",
+      "options": {
+        "A": "Fine-tuning is cheaper and always preferred over RAG",
+        "B": "RAG changes the model weights; fine-tuning does not",
+        "C": "Fine-tuning modifies model weights with new data; RAG injects knowledge at inference time via context",
+        "D": "They are the same technique with different names"
+      },
+      "correctAnswer": "C",
+      "explanation": "Fine-tuning retrains model weights on your data — good for teaching writing style, output format, or domain vocabulary. It is expensive and the knowledge is frozen at training time. RAG does not touch the model — it retrieves relevant documents at query time and includes them in the prompt. RAG is better for dynamic, up-to-date knowledge. Most enterprise use cases should start with RAG before considering fine-tuning."
+    },
+    {
+      "id": 23,
+      "domain": "Natural Language Processing",
+      "difficulty": "easy",
+      "question": "Which Azure AI Speech feature converts spoken audio into written text in real time?",
+      "options": {
+        "A": "Text-to-Speech (TTS)",
+        "B": "Speech Translation",
+        "C": "Speech-to-Text (STT)",
+        "D": "Speaker Recognition"
+      },
+      "correctAnswer": "C",
+      "explanation": "Speech-to-Text (STT), also called Speech Recognition, transcribes spoken audio to text. It supports real-time and batch transcription, 100+ languages, custom acoustic models, and profanity filtering. Text-to-Speech does the reverse (text to audio). Speech Translation transcribes AND translates in one step. Speaker Recognition identifies who is speaking, not what they are saying."
+    },
+    {
+      "id": 24,
+      "domain": "Natural Language Processing",
+      "difficulty": "medium",
+      "question": "You need to build a call centre solution that transcribes customer calls, detects the language, and identifies key topics in real time. Which combination is most appropriate?",
+      "options": {
+        "A": "Azure AI Speech (STT) + Azure AI Language (Key Phrase Extraction + Language Detection)",
+        "B": "Azure AI Vision + Azure AI Translator",
+        "C": "Azure OpenAI only",
+        "D": "Azure AI Speech (TTS) + Azure Custom Vision"
+      },
+      "correctAnswer": "A",
+      "explanation": "This requires a multi-service pipeline: Azure AI Speech STT transcribes the audio to text in real time. Then Azure AI Language applies Language Detection (identifies the language) and Key Phrase Extraction (identifies key topics). These services compose naturally — the output of one becomes the input of the next. This is a classic Azure AI multi-service pipeline pattern commonly tested in AI-102."
+    },
+    {
+      "id": 25,
+      "domain": "Plan and Manage Azure AI",
+      "difficulty": "hard",
+      "question": "Your AI system is rejecting loan applications at a higher rate for one demographic group. According to Microsoft's Responsible AI principles, which principle is primarily being violated?",
+      "options": {
+        "A": "Reliability",
+        "B": "Fairness",
+        "C": "Transparency",
+        "D": "Privacy"
+      },
+      "correctAnswer": "B",
+      "explanation": "The Fairness principle states that AI systems should treat all people equitably and not discriminate based on protected characteristics such as gender, race, or age. Unequal loan rejection rates across demographic groups is a classic example of algorithmic bias. To address this, you would use tools like Azure Machine Learning's Fairlearn integration to measure and mitigate bias in model predictions."
+    }
+  ]
+}

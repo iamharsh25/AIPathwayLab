@@ -1,0 +1,92 @@
+AZURE OPENAI SERVICE SETUP GUIDE
+=================================
+
+PURPOSE: Azure OpenAI gives you access to GPT-4o, GPT-4, and embedding models through a managed Azure endpoint. It is used in this project for chat completion (tutor-gpt) and text embeddings (tutor-embedding).
+
+PREREQUISITES
+- Active Azure subscription (portal.azure.com)
+- Azure OpenAI is a gated service — you must request access before creating a resource
+- Request access at: https://aka.ms/oai/access
+- Approval is usually within 1-3 business days
+
+STEP 1: CREATE THE AZURE OPENAI RESOURCE
+1. Go to portal.azure.com and sign in
+2. Click "Create a resource" (+ button top left)
+3. Search for "Azure OpenAI"
+4. Click "Azure OpenAI" → "Create"
+5. Fill in the form:
+   - Subscription: your Azure subscription
+   - Resource Group: create new or use existing (e.g. "ai-pathway-rg")
+   - Region: East US or East US 2 (best model availability for GPT-4o)
+   - Name: unique name (e.g. "ai-pathway-openai")
+   - Pricing Tier: Standard S0
+6. Click "Review + create" → "Create"
+7. Wait ~2 minutes for deployment to complete
+
+STEP 2: GET YOUR CREDENTIALS
+1. Navigate to your resource once deployed
+2. In the left menu, click "Keys and Endpoint"
+3. Copy "KEY 1" — this is your API key
+4. Copy the "Endpoint" URL — format: https://YOUR-NAME.openai.azure.com/
+
+STEP 3: DEPLOY MODELS IN AZURE OPENAI STUDIO
+1. From your resource page, click "Go to Azure OpenAI Studio"
+   OR navigate to: https://oai.azure.com
+2. Click "Deployments" in the left menu
+3. Click "Deploy model" → "Deploy base model"
+
+Deploy the Chat model:
+- Model: gpt-4o (or gpt-4o-mini for lower cost)
+- Deployment name: tutor-gpt
+  IMPORTANT: This name must exactly match "DeploymentName" in appsettings.json
+- Version: latest available
+- Click "Deploy"
+
+Deploy the Embedding model:
+- Click "Deploy model" → "Deploy base model" again
+- Model: text-embedding-ada-002
+- Deployment name: tutor-embedding
+  IMPORTANT: This name must exactly match "EmbeddingDeployment" in appsettings.json
+- Click "Deploy"
+
+STEP 4: CONFIGURE APPSETTINGS.JSON
+Add these values to AIPathwayLab.Api/appsettings.json:
+
+{
+  "AzureOpenAI": {
+    "Endpoint": "https://YOUR-RESOURCE-NAME.openai.azure.com/",
+    "ApiKey": "YOUR-KEY-1-HERE",
+    "DeploymentName": "tutor-gpt",
+    "EmbeddingDeployment": "tutor-embedding"
+  }
+}
+
+How this is used in code:
+- KernelFactory.cs reads these values via IConfiguration
+- AddAzureOpenAIChatCompletion() uses Endpoint + ApiKey + DeploymentName
+- AddAzureOpenAITextEmbeddingGeneration() uses Endpoint + ApiKey + EmbeddingDeployment
+- The Kernel is registered as a singleton in Program.cs
+
+STEP 5: VERIFY THE CONNECTION
+1. Run dotnet run in the AIPathwayLab.Api directory
+2. Watch the console — you should see "Indexing N code chunks"
+3. If you see embedding errors, check your keys and deployment names
+
+COMMON ERRORS
+- AuthenticationFailure → wrong API key
+- DeploymentNotFound → deployment name in appsettings doesn't match Azure portal
+- 429 Too Many Requests → rate limit hit, reduce request frequency
+- AccessDenied → Azure OpenAI access not yet approved (check your application status)
+- Model not available in region → try East US 2 or Sweden Central
+
+TOKEN LIMITS AND COSTS
+- GPT-4o: context window 128k tokens, ~$5 per 1M input tokens, ~$15 per 1M output tokens
+- text-embedding-ada-002: 8191 token input limit, ~$0.10 per 1M tokens
+- For learning/dev, usage is very low — expect < $1/month
+
+SEMANTIC KERNEL INTEGRATION
+This project uses Microsoft Semantic Kernel (NuGet: Microsoft.SemanticKernel) to:
+- Wrap Azure OpenAI for both chat and embeddings
+- Provide IChatCompletionService for streaming responses
+- Provide ITextEmbeddingGenerationService for vector generation
+The Kernel instance is a singleton built once in KernelFactory.cs at startup.
